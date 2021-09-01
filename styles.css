@@ -1,0 +1,900 @@
+html * {
+    font-family: Montserrat;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+a:hover {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+p {
+    margin: 0;
+}
+
+body {
+    position: sticky;
+    position: -webkit-sticky;
+    background: rgba(0, 0, 0, 0.6)url(img/backgroundPictureBlur.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    margin: 0px;
+    margin-top: -22px;
+}
+
+
+/* Add blur */
+
+.blur-filter {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    filter: blur(20px);
+}
+
+.no-blur-filter {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+    filter: none;
+}
+
+.arrow {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform-origin: 50% 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1;
+    animation: arrow-movement 2s ease-in-out infinite;
+}
+
+.arrow:before,
+.arrow:after {
+    background: whitesmoke;
+    content: '';
+    display: block;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 70%;
+    left: 0;
+    width: 20px;
+}
+
+.arrow:before {
+    transform: rotate(45deg) translateX(6%);
+    transform-origin: top left;
+}
+
+.arrow:after {
+    transform: rotate(-45deg) translateX(22%);
+    transform-origin: top right;
+}
+
+@keyframes arrow-movement {
+    50% {
+        opacity: 0;
+        top: 75%;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* --- The Overlay (background) --- */
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 4;
+}
+
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Title of overlay */
+
+.overlay-content h4 {
+    padding: 8px;
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    /* Display block instead of inline */
+    margin: 0;
+}
+
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+    position: absolute;
+}
+
+
+/* --- Banner --- */
+
+#bannerTitle {
+    height: 100vh;
+}
+
+.banner {
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2)url(img/backgroundPicture.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+.banner h1 {
+    color: whitesmoke;
+    top: -15%;
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    margin: 0 60px 0 60px;
+    background: rgba(0, 0, 0, 0.3)url(img/backgroundPictureBlur.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    border-radius: 50px;
+    padding: 5px 15px 5px 15px;
+}
+
+
+/* --- Menu Button --- */
+
+.menuButton {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    transition: top 0.5s;
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
+    z-index: 3;
+}
+
+.no-backgorund {
+    background: transparent;
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+.show-background {
+    background: rgba(0, 0, 0, 0.2)url(img/backgroundPicture.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+}
+
+.transparent-menubutton {
+    transition: 0.7s;
+    opacity: 0;
+}
+
+.no-transparent-menubutton {
+    transition: 0.7s;
+    opacity: 100%;
+}
+
+.bannerWrapper {
+    place-content: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.bannerButton {
+    text-decoration: none;
+    color: whitesmoke !important;
+}
+
+.bannerWrapper .bannerButton {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #060606;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-out;
+}
+
+.bannerWrapper .bannerButton:hover {
+    width: 190px;
+}
+
+.bannerWrapper .bannerButton .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.bannerWrapper .bannerButton:hover .icon {
+    background: #060606;
+}
+
+.bannerWrapper .bannerButton .icon i {
+    font-size: 30px;
+    line-height: 62px;
+    transition: all 0.3s ease-out;
+}
+
+.bannerWrapper .bannerButton:hover .icon i {
+    color: whitesmoke;
+}
+
+.bannerWrapper .bannerButton span {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 60px;
+    margin-left: 5px;
+    transition: all 0.3s ease-out;
+    color: whitesmoke;
+}
+
+
+/* Line */
+
+.line {
+    align-items: center;
+    width: 75px;
+    border: 4px solid #979D57;
+    background: #979D57;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
+}
+
+
+/* --- Sections --- */
+
+.allSections {
+    max-width: 1400px;
+    margin: auto;
+    color: whitesmoke;
+    background: #262626;
+    border: 50px solid #262626;
+}
+
+.aboutTitle h3,
+.portofolioTitle h3,
+.projectsTitle h3,
+.contactTitle h3 {
+    text-align: center;
+    padding: 8px;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 300;
+    cursor: default;
+    background-image: linear-gradient(120deg, #979D57 0%, #3C5830 100%);
+    border-radius: 50px;
+    width: 230px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 75px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
+}
+
+
+/* About Section */
+
+.about p:nth-child(2) {
+    text-indent: 1.5rem;
+    font-size: 15px;
+    line-height: 26px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+    margin: 20px 0 20px 0;
+}
+
+.categoryAbout {
+    color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-sm-12,
+.col-md-6 {
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.imageAbout {
+    width: 100%;
+    border-radius: 50px;
+    transition: all 0.3s ease-out;
+}
+
+.aboutName {
+    text-indent: 1.5rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+    margin: 40px 0 20px 0;
+    line-height: 40px;
+    word-break: keep-all;
+    font-weight: 100;
+    font-size: 45px;
+}
+
+
+/* Portofolio Section */
+
+.column {
+    position: relative;
+    float: left;
+    width: 50%;
+    overflow: hidden;
+    display: inline;
+    margin: auto;
+}
+
+.row.marginBottom,
+.row.marginMiddle,
+.row.marginTop {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
+    border-radius: 50px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    overflow: hidden;
+}
+
+
+/* Images + Categories */
+
+.imageOverlay {
+    display: inline;
+    color: whitesmoke;
+    position: absolute;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    text-align: center;
+}
+
+.categoryRight {
+    color: whitesmoke;
+    background: #161616;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    border-radius: 0 50px 50px 0;
+    transition: all 0.3s ease-out;
+}
+
+.categoryRight:hover {
+    background: #060606;
+    transition: all 0.3s ease-out;
+}
+
+.categoryRight:hover .underlineMagical {
+    background-size: 100% 100%;
+}
+
+.imageLeft {
+    width: 100%;
+    border-radius: 50px 0 0 50px;
+    transition: all 0.3s ease-out;
+}
+
+.marginBottom {
+    margin-bottom: 30px;
+}
+
+.marginTop {
+    margin-top: 50px;
+}
+
+.categoryLeft {
+    color: whitesmoke;
+    background: #161616;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 200;
+    font-size: 30px;
+    border-radius: 50px 0 0 50px;
+    transition: all 0.3s ease-out;
+}
+
+.categoryLeft:hover {
+    background: #060606;
+    transition: all 0.3s ease-out;
+}
+
+.categoryLeft:hover .underlineMagical {
+    background-size: 100% 100%;
+}
+
+.imageRight {
+    width: 100%;
+    border-radius: 0 50px 50px 0;
+    transition: all 0.3s ease-out;
+}
+
+.rectangle {
+    width: 100%;
+    padding-bottom: 125%;
+}
+
+.categoryText {
+    padding: 8px;
+    text-align: center;
+}
+
+.categoryLink {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.underlineMagical {
+    background-image: linear-gradient(120deg, #262626 0%, #565656 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    border-radius: 50px;
+    padding: 5px 20px 5px 20px;
+    transition: all 0.3s ease-out;
+}
+
+.underlineMagical:hover {
+    background-image: linear-gradient(120deg, #979D57 0%, #3C5830 100%);
+    transition: all 0.3s ease-out;
+}
+
+.column .icon {
+    color: whitesmoke;
+    opacity: 1;
+}
+
+.rectangle .column .icon:hover {
+    opacity: 1;
+}
+
+
+/* Projects Section */
+
+.projects p {
+    text-indent: 3rem;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 26px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: justify;
+}
+
+
+/* Contact Section */
+
+.contact p {
+    font-size: 15px;
+    line-height: 26px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-align: center;
+    margin: auto;
+    width: 75%;
+}
+
+.contactLinks {
+    cursor: pointer;
+    text-decoration: whitesmoke;
+    color: whitesmoke;
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.contactLinks:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Footer --- */
+
+footer {
+    position: sticky;
+    position: -webkit-sticky;
+    background: rgba(0, 0, 0, 0.8)url(img/backgroundPictureBlur.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    text-align: initial;
+    color: whitesmoke;
+}
+
+
+/* --- Social Media Buttons --- */
+
+.wrapper {
+    display: flex;
+    place-content: center;
+    padding: 25px;
+}
+
+.button {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #262626;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover {
+    width: 225px;
+}
+
+.wrapper .button:nth-child(2):hover {
+    width: 215px;
+}
+
+.wrapper .button:nth-child(3):hover {
+    width: 165px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #E1306C;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #4267B2;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #2196F3;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i {
+    color: whitesmoke;
+}
+
+.wrapper .button span {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span {
+    color: #E1306C;
+}
+
+.wrapper .button:nth-child(2) span {
+    color: #4267B2;
+}
+
+.wrapper .button:nth-child(3) span {
+    color: #2196F3;
+}
+
+
+/* --- Copyright --- */
+
+.copyright {
+    cursor: pointer;
+    text-decoration: whitesmoke;
+    color: whitesmoke;
+}
+
+.copyright:hover {
+    text-decoration: underline;
+}
+
+
+/* Scroll Up Button */
+
+.scrollToTopBtn {
+    background: #060606;
+    border: none;
+    border-radius: 50%;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 48px;
+    width: 48px;
+    position: fixed;
+    bottom: 55px;
+    right: 40px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease;
+}
+
+.showBtn {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.scrollToTopBtn:focus {
+    outline: none;
+}
+
+
+/* --- Media Queries ---- */
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 576px) {
+    body {
+        text-align: center;
+    }
+    .banner h1 {
+        font-size: 35px;
+    }
+    .bannerButton {
+        font-size: 25px;
+    }
+    .overlay h4 {
+        font-size: 25px;
+    }
+    .overlay-content {
+        top: 15%;
+    }
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+    .categoryRight {
+        font-size: 16px;
+        border-radius: 0 30px 30px 0;
+    }
+    .categoryLeft {
+        font-size: 16px;
+        border-radius: 30px 0 0 30px;
+    }
+    .imageLeft {
+        border-radius: 30px 0 0 30px;
+    }
+    .imageRight {
+        border-radius: 0 30px 30px 0;
+    }
+    .allSections {
+        border-radius: 0;
+    }
+    .aboutName {
+        font-size: 25px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .banner h1 {
+        font-size: 45px;
+    }
+    .bannerButton {
+        font-size: 30px;
+    }
+    .overlay h4 {
+        font-size: 30px;
+    }
+    .overlay-content {
+        top: 15%;
+    }
+    .overlay a {
+        font-size: 25px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .allSections {
+        border-radius: 0;
+    }
+    .aboutName {
+        font-size: 45px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    body {
+        text-align: initial;
+    }
+    .banner h1 {
+        font-size: 50px;
+    }
+    .bannerButton {
+        font-size: 30px;
+    }
+    .overlay h4 {
+        font-size: 35px;
+    }
+    .overlay-content {
+        top: 25%;
+    }
+    .overlay a {
+        font-size: 30px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    .allSections {
+        border-radius: 40px 40px 0 0;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .overlay h4 {
+        font-size: 40px;
+    }
+    .overlay a {
+        font-size: 36px
+    }
+    .overlay .closebtn {
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
