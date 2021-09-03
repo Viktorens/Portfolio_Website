@@ -177,6 +177,8 @@ body {
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.2)url(img/backgroundPicture.jpg);
+    background-size: 100%;
+    -webkit-background-size: 100%;
     background-size: cover;
     -webkit-background-size: cover;
     background-position-x: center;
@@ -193,6 +195,8 @@ body {
     font-weight: 700;
     margin: 0 60px 0 60px;
     background: rgba(0, 0, 0, 0.3)url(img/backgroundPictureBlur.jpg);
+    background-size: 100%;
+    -webkit-background-size: 100%;
     background-size: cover;
     -webkit-background-size: cover;
     background-position-x: center;
