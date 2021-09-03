@@ -23,6 +23,7 @@ body {
     position: -webkit-sticky;
     background: rgba(0, 0, 0, 0.6)url(img/backgroundPictureBlur.jpg);
     background-size: cover;
+    background-size: -webkit-cover;
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -177,6 +178,7 @@ body {
     justify-content: center;
     background: rgba(0, 0, 0, 0.2)url(img/backgroundPicture.jpg);
     background-size: cover;
+    background-size: -webkit-cover;
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -192,6 +194,7 @@ body {
     margin: 0 60px 0 60px;
     background: rgba(0, 0, 0, 0.3)url(img/backgroundPictureBlur.jpg);
     background-size: cover;
+    background-size: -webkit-cover;
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -218,6 +221,7 @@ body {
 .no-backgorund {
     background: transparent;
     background-size: cover;
+    background-size: -webkit-cover;
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -227,6 +231,7 @@ body {
 .show-background {
     background: rgba(0, 0, 0, 0.2)url(img/backgroundPicture.jpg);
     background-size: cover;
+    background-size: -webkit-cover;
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
