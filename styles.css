@@ -178,7 +178,7 @@ body {
     justify-content: center;
     background: rgba(0, 0, 0, 0.2)url(img/backgroundPicture.jpg);
     background-size: cover;
-    background-size: -webkit-cover;
+    -webkit-background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -209,6 +209,7 @@ body {
 .menuButton {
     display: flex;
     position: sticky;
+    -webkit-position: sticky;
     top: 0;
     width: 100%;
     transition: top 0.5s;
@@ -738,6 +739,8 @@ footer {
 /* Scroll Up Button */
 
 .scrollToTopBtn {
+    display: flex;
+    justify-content: center;
     background: #060606;
     border: none;
     border-radius: 50%;
@@ -816,6 +819,15 @@ footer {
     }
     .aboutName {
         font-size: 25px;
+    }
+    .wrapper .button:nth-child(1):hover {
+        width: 60px;
+    }
+    .wrapper .button:nth-child(2):hover {
+        width: 60px;
+    }
+    .wrapper .button:nth-child(3):hover {
+        width: 60px;
     }
 }
 
