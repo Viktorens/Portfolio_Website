@@ -25,7 +25,7 @@ body {
     background-size: 100%;
     -webkit-background-size: 100%;
     /* background-size: cover; */
-    /* -webkit-background-size: cover; */
+    -webkit-background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -182,7 +182,6 @@ body {
     background-size: 100%;
     -webkit-background-size: 100%;
     /* background-size: cover; */
-    /* -webkit-background-size: cover; */
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -199,8 +198,7 @@ body {
     background: rgba(0, 0, 0, 0.3)url(img/backgroundPictureBlur.jpg);
     background-size: 100%;
     -webkit-background-size: 100%;
-    /* background-size: cover;
-    -webkit-background-size: cover; */
+    /* background-size: cover; */
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -230,7 +228,6 @@ body {
     background-size: 100%;
     -webkit-background-size: 100%;
     /* background-size: cover; */
-    /* -webkit-background-size: cover; */
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -242,7 +239,6 @@ body {
     background-size: 100%;
     -webkit-background-size: 100%;
     /* background-size: cover; */
-    /* -webkit-background-size: cover; */
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -633,7 +629,6 @@ footer {
     background-size: 100%;
     -webkit-background-size: 100%;
     /* background-size: cover; */
-    /* -webkit-background-size: cover; */
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
