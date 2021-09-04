@@ -60,23 +60,6 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
 
 
-// Navbar background
-var menuButton = document.querySelector(".menuButton");
-var rootElement = document.documentElement;
-
-function handleBackground() {
-    var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
-    if ((rootElement.scrollTop / scrollTotal) > 0.15) {
-        menuButton.classList.remove("show-background");
-        menuButton.classList.add("no-background");
-    } else {
-        menuButton.classList.remove("no-background");
-        menuButton.classList.add("show-background");
-    }
-}
-
-document.addEventListener("scroll", handleBackground);
-
 // Scroll Up Navbar
 var prevScrollpos = window.pageYOffset;
 
