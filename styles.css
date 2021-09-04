@@ -24,8 +24,7 @@ body {
     background: rgba(0, 0, 0, 0.6)url(img/backgroundPictureBlur.jpg);
     background-size: 100%;
     -webkit-background-size: 100%;
-    /* background-size: cover; */
-    -webkit-background-size: cover;
+    background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -169,11 +168,11 @@ body {
 /* --- Banner --- */
 
 #bannerTitle {
-    height: 100vh;
+    height: 105vh;
 }
 
 .banner {
-    display: flex;
+    display: block;
     position: sticky;
     -webkit-position: sticky;
     align-items: center;
@@ -181,30 +180,26 @@ body {
     background: rgba(0, 0, 0, 0.2)url(img/backgroundPicture.jpg);
     background-size: 100%;
     -webkit-background-size: 100%;
-    /* background-size: cover; */
+    background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-blend-mode: overlay;
 }
 
 .banner h1 {
-    color: whitesmoke;
-    top: -15%;
-    position: relative;
+    padding: 8px;
     text-align: center;
-    font-weight: 700;
-    margin: 0 60px 0 60px;
-    background: rgba(0, 0, 0, 0.3)url(img/backgroundPictureBlur.jpg);
-    background-size: 100%;
-    -webkit-background-size: 100%;
-    /* background-size: cover; */
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
+    position: relative;
+    top: 25%;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 300;
+    cursor: default;
+    background: #262626;
     border-radius: 50px;
-    padding: 5px 15px 5px 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.75);
 }
 
 
@@ -221,28 +216,6 @@ body {
     justify-content: center;
     text-align: initial;
     z-index: 3;
-}
-
-.no-backgorund {
-    background: transparent;
-    background-size: 100%;
-    -webkit-background-size: 100%;
-    /* background-size: cover; */
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
-}
-
-.show-background {
-    background: rgba(0, 0, 0, 0.2)url(img/backgroundPicture.jpg);
-    background-size: 100%;
-    -webkit-background-size: 100%;
-    /* background-size: cover; */
-    background-position-x: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-blend-mode: overlay;
 }
 
 .transparent-menubutton {
@@ -628,10 +601,10 @@ footer {
     background: rgba(0, 0, 0, 0.8)url(img/backgroundPictureBlur.jpg);
     background-size: 100%;
     -webkit-background-size: 100%;
-    /* background-size: cover; */
+    background-size: cover;
     background-position-x: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-blend-mode: overlay;
     text-align: initial;
     color: whitesmoke;
@@ -785,7 +758,8 @@ footer {
         text-align: center;
     }
     .banner h1 {
-        font-size: 35px;
+        font-size: 30px;
+        width: 300px;
     }
     .bannerButton {
         font-size: 25px;
@@ -836,6 +810,9 @@ footer {
     .wrapper .button:nth-child(3):hover {
         width: 60px;
     }
+    .banner {
+        background-attachment: scroll;
+    }
 }
 
 
@@ -843,7 +820,7 @@ footer {
 
 @media (min-width: 576px) {
     .banner h1 {
-        font-size: 45px;
+        font-size: 50px;
     }
     .bannerButton {
         font-size: 30px;
@@ -868,6 +845,9 @@ footer {
     .aboutName {
         font-size: 45px;
     }
+    .banner {
+        background-attachment: scroll;
+    }
 }
 
 
@@ -876,9 +856,6 @@ footer {
 @media (min-width: 768px) {
     body {
         text-align: initial;
-    }
-    .banner h1 {
-        font-size: 50px;
     }
     .bannerButton {
         font-size: 30px;
@@ -922,4 +899,8 @@ footer {
 
 /* Extra large devices (large desktops, 1200px and up) */
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .banner {
+        background-attachment: fixed;
+    }
+}
