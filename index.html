@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <!-- The overlay -->
+    <!-- The menu overlay -->
     <div id="myNav" class="overlay">
         <!-- Button to close the overlay navigation -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav(); enableScrolling()">&times;</a>
@@ -36,21 +36,29 @@
             <a href="#contact" onclick="closeNav(); enableScrolling()">Contact</a>
         </div>
     </div>
+    <!-- Menu Bar -->
+    <div class="menuButton show-background" id="navbar">
+        <div class="bannerWrapper" id="navbarButton">
+            <a class="bannerButton" onclick="openNav(); disableScrolling()">
+                <div class="icon"><i class="bi bi-list"></i></div>
+                <span>Meniu</span>
+            </a>
+        </div>
+    </div>
+    <!-- Scroll To Top Button -->
+    <button class="scrollToTopBtn" id="scrollToTopButton"><i class="bi bi-chevron-bar-up"></i></button>
+    <!-- Main -->
     <main id="main" class="no-blur-filter">
+        <!-- Arrow -->
         <div class="arrow"></div>
+        <!-- Title -->
         <div id="bannerTitle" class="banner">
-            <div class="menuButton show-background" id="navbar">
-                <div class="bannerWrapper" id="navbarButton">
-                    <a class="bannerButton" onclick="openNav(); disableScrolling()">
-                        <div class="icon"><i class="bi bi-list"></i></div>
-                        <span>Meniu</span>
-                    </a>
-                </div>
-            </div>
             <h1>Victor Greavu Photography</h1>
         </div>
+        <!-- Sections -->
         <section class="allSections">
             <div class="line"></div>
+            <!-- About -->
             <section class="about">
                 <div id="despre-mine" class="aboutTitle">
                     <h3>Despre mine</h3>
@@ -68,7 +76,7 @@
                             <br><br> În final, am decis să îmi dezvolt această pasiune și să pot folosi această modalitate prin a aduce celor din jurul meu bucurie, surprinzând momente unice prin fotografie.</p>
                     </div>
                 </div>
-
+                <!-- Portfolio -->
             </section>
             <section class="portofolio">
                 <div id="portofoliu" class="portofolioTitle">
@@ -131,6 +139,7 @@
                     diam dolor, lobortis a interdum a, sollicitudin quis elit. Morbi porttitor ornare iaculis. Praesent tempor elementum ante non pretium. Vivamus sagittis non massa non molestie. Suspendisse quis ligula posuere, porttitor mauris fermentum,
                     tincidunt felis. Ut non placerat purus. </p>
             </section> -->
+            <!-- Contact -->
             <section class="contact">
                 <div id="contact" class="contactTitle">
                     <h3>Contact</h3>
@@ -139,11 +148,9 @@
                 <a class="contactLinks" href="mailto: viktorens10mc@gmail.com">viktorens10mc@gmail.com</a>
                 <a class="contactLinks" href="tel: +40743188886">+40 743 188 886</a>
             </section>
-            <button class="scrollToTopBtn"><i class="bi bi-chevron-bar-up"></i></button>
         </section>
-
+        <!-- Footer -->
         <footer>
-
             <div class="wrapper">
                 <a class="button" href="https://www.instagram.com/victor.greavu" target="_blank">
                     <div class="icon"><i class="bi bi-instagram"></i></div>

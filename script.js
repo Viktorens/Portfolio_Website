@@ -2,6 +2,9 @@
 function openNav() {
     var blurElement = document.getElementById("main");
     var menuButton = document.getElementById("navbarButton");
+    var scrollToTopButton = document.getElementById("scrollToTopButton");
+
+    scrollToTopButton.classList.remove("showBtn");
     menuButton.classList.remove("no-transparent-menubutton");
     menuButton.classList.add("transparent-menubutton");
     blurElement.classList.remove("no-blur-filter");
@@ -14,6 +17,7 @@ function openNav() {
 function closeNav() {
     var blurElement = document.getElementById("main");
     var menuButton = document.getElementById("navbarButton");
+
     menuButton.classList.remove("transparent-menubutton");
     menuButton.classList.add("no-transparent-menubutton");
     blurElement.classList.remove("blur-filter");
