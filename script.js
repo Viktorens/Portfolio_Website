@@ -80,7 +80,7 @@ document.addEventListener("scroll", handleNavbar);
 
 function handleImageBlur() {
     var blur = window.pageYOffset;
-    opacityVal = (blur / 450.0);
+    opacityVal = (blur / 300.0);
     document.getElementById("blurred-img").style.opacity = opacityVal;
 }
 document.addEventListener("scroll", handleImageBlur);
