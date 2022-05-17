@@ -317,6 +317,7 @@ body {
     border: 50px solid #262626;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
     border-radius: 30px;
+    width: 97%;
 }
 
 .aboutTitle h3,
