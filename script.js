@@ -78,6 +78,7 @@ function handleNavbar() {
 }
 document.addEventListener("scroll", handleNavbar);
 
+// Scroll Background Blur
 function handleImageBlur() {
     var blur = window.pageYOffset;
     opacityVal = (blur / 300.0);
