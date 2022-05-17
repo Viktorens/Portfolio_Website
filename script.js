@@ -72,7 +72,6 @@ var prevScrollpos = window.pageYOffset;
 
 async function handleNavbar() {
     var currentScrollPos = window.pageYOffset;
-    console.log(pageYOffset);
     if (prevScrollpos > currentScrollPos || window.pageYOffset <= 50) {
         document.getElementById("navbar").style.top = "0";
     } else {
