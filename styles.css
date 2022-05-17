@@ -158,7 +158,7 @@ p {
     height: 100vh;
     left: 0;
     right: 0;
-    z-index: -2;
+    z-index: -1;
     background: rgba(0, 0, 0, 0)url(img/backgroundPicture.jpg) center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -173,7 +173,7 @@ p {
     height: 100vh;
     left: 0;
     right: 0;
-    z-index: -2;
+    z-index: -1;
     background: rgba(0, 0, 0, 0)url(img/backgroundPictureBlur.jpg) center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
