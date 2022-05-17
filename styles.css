@@ -724,7 +724,6 @@ footer {
     position: fixed;
     border: none;
     color: #f5f5f5;
-    /* font-size: 25px; */
     height: 60px;
     width: 60px;
     margin: 0 5px;
@@ -750,7 +749,7 @@ footer {
 }
 
 i.bi.bi-chevron-bar-up {
-    font-size: x-large;
+    font-size: 25px;
 }
 
 
