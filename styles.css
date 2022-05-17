@@ -585,9 +585,12 @@ body {
     cursor: pointer;
     text-decoration: whitesmoke;
     color: whitesmoke;
-    margin-top: 20px;
+    padding-top: 20px;
     justify-content: center;
     display: flex;
+    max-width: 0%;
+    margin: auto;
+    white-space: nowrap;
 }
 
 .contactLinks:hover {
