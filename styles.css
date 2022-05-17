@@ -18,7 +18,8 @@ p {
     margin: 0;
 }
 
-body {
+
+/* body {
     position: sticky;
     -webkit-position: sticky;
     background: rgba(0, 0, 0, 0)url(img/backgroundPictureBlur.jpg);
@@ -32,6 +33,24 @@ body {
     margin: 0px;
     margin-top: -22px;
     padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+} */
+
+body:after {
+    content: "";
+    position: fixed;
+    /* stretch a fixed position to the whole screen */
+    top: 0;
+    height: 100vh;
+    /* fix for mobile browser address bar appearing disappearing */
+    left: 0;
+    right: 0;
+    z-index: -1;
+    /* needed to keep in the background */
+    background: rgba(0, 0, 0, 0)url(img/backgroundPictureBlur.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -179,8 +198,8 @@ body {
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0)url(img/backgroundPicture.jpg);
-    background-size: 100vh;
-    -webkit-background-size: 100vh;
+    background-size: 100%;
+    -webkit-background-size: 100%;
     background-size: cover;
     background-position-x: center;
     background-repeat: no-repeat;
@@ -189,12 +208,13 @@ body {
     z-index: 3;
 }
 
-@supports (-webkit-touch-callout: none) {
+
+/* @supports (-webkit-touch-callout: none) {
     .banner {
         background: rgba(0, 0, 0, 0)url(img/backgroundPicture.jpg) center center no-repeat scroll;
         background-size: auto 100vh;
     }
-}
+} */
 
 .banner h1 {
     padding: 8px;
