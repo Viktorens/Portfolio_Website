@@ -673,7 +673,7 @@ footer {
 }
 
 .wrapper .button:nth-child(1):hover .icon {
-    background: #E1306C;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 .wrapper .button:nth-child(2):hover .icon {
