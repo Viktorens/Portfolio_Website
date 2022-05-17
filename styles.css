@@ -185,7 +185,15 @@ body {
     background-position-x: center;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
+    background-attachment: fixed;
     z-index: 3;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .banner {
+        background: rgba(0, 0, 0, 0)url(img/backgroundPicture.jpg) center top no-repeat scroll;
+        background-size: auto 100vh;
+    }
 }
 
 .banner h1 {
@@ -854,9 +862,6 @@ i.bi.bi-chevron-bar-up {
     .imageRight {
         border-radius: 0 30px 30px 0;
     }
-    /* .allSections {
-        border-radius: 0;
-    } */
     .aboutName {
         font-size: 25px;
     }
@@ -872,9 +877,9 @@ i.bi.bi-chevron-bar-up {
     .bannerWrapper .bannerButton:hover {
         width: 60px;
     }
-    .banner {
+    /* .banner {
         background-attachment: scroll;
-    }
+    } */
 }
 
 
@@ -901,15 +906,12 @@ i.bi.bi-chevron-bar-up {
         top: 15px;
         right: 35px;
     }
-    /* .allSections {
-        border-radius: 0;
-    } */
     .aboutName {
         font-size: 45px;
     }
-    .banner {
+    /* .banner {
         background-attachment: scroll;
-    }
+    } */
 }
 
 
@@ -936,9 +938,6 @@ i.bi.bi-chevron-bar-up {
         top: 15px;
         right: 35px;
     }
-    /* .allSections {
-        border-radius: 30px;
-    } */
 }
 
 
@@ -962,7 +961,7 @@ i.bi.bi-chevron-bar-up {
 /* Extra large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
-    .banner {
+    /* .banner {
         background-attachment: fixed;
-    }
+    } */
 }
