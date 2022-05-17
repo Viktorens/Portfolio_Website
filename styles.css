@@ -720,7 +720,7 @@ footer {
 /* Scroll Up Button */
 
 .scrollToTopBtn {
-    display: flex;
+    display: inline-block;
     position: fixed;
     align-items: center;
     justify-content: center;
