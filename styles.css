@@ -834,6 +834,8 @@ i.bi.bi-chevron-bar-up {
     }
     .copyright {
         font-size: 12px;
+        text-align: center;
+        justify-content: center;
     }
     .categoryRight {
         font-size: 16px;
