@@ -65,13 +65,18 @@ document.addEventListener("scroll", handleScroll);
 
 
 // Scroll Up Navbar
+function delay(time) {
+    return new Promise(resolve => setTimeout(resolve, time));
+}
 var prevScrollpos = window.pageYOffset;
 
-function handleNavbar() {
+async function handleNavbar() {
     var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos || window.pageYOffset === 0) {
+    console.log(pageYOffset);
+    if (prevScrollpos > currentScrollPos || window.pageYOffset <= 50) {
         document.getElementById("navbar").style.top = "0";
     } else {
+        await delay(100);
         document.getElementById("navbar").style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
