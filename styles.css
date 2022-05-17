@@ -724,7 +724,7 @@ footer {
     position: fixed;
     align-items: center;
     justify-content: center;
-    text-align: initial;
+    text-align: center;
     background: green;
     border: none;
     border-radius: 50%;
@@ -732,6 +732,8 @@ footer {
     cursor: pointer;
     font-size: 1.8em;
     line-height: 50px;
+    margin: 0 5px;
+    overflow: hidden;
     height: 50px;
     width: 50px;
     bottom: 55px;
