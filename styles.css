@@ -726,7 +726,7 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: initial;
-    background: #002938;
+    background: #060606;
     border: none;
     border-radius: 50%;
     color: #f5f5f5;
@@ -735,7 +735,7 @@ footer {
     line-height: 1.9;
     width: 1.95em;
     bottom: 55px;
-    right: 20%;
+    right: 5%;
     z-index: 100;
     opacity: 0;
     transform: translateY(150px);
