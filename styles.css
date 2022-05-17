@@ -191,7 +191,7 @@ body {
 
 @supports (-webkit-touch-callout: none) {
     .banner {
-        background: rgba(0, 0, 0, 0)url(img/backgroundPicture.jpg) center top no-repeat scroll;
+        background: rgba(0, 0, 0, 0)url(img/backgroundPicture.jpg) center top no-repeat fixed;
         background-size: auto 100vh;
     }
 }
