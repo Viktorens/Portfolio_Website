@@ -77,3 +77,10 @@ function handleNavbar() {
     prevScrollpos = currentScrollPos;
 }
 document.addEventListener("scroll", handleNavbar);
+
+function handleImageBlur() {
+    var blur = window.pageYOffset;
+    opacityVal = (blur / 700.0);
+    document.getElementById("blurred-img").style.opacity = opacityVal;
+}
+document.addEventListener("scroll", handleImageBlur);
