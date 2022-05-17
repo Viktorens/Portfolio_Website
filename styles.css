@@ -724,7 +724,7 @@ footer {
     position: fixed;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: initial;
     background: green;
     border: none;
     border-radius: 50%;
