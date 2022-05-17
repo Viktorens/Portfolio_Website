@@ -315,6 +315,7 @@ body {
     color: whitesmoke;
     background: #262626;
     border: 50px solid #262626;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
 }
 
 .aboutTitle h3,
@@ -600,33 +601,22 @@ body {
 
 /* --- Footer --- */
 
-
-/* footer {
-    position: sticky;
-    -webkit-position: sticky;
-    background: #262626;
-    text-align: initial;
-    color: whitesmoke;
-    max-width: 1400px;
-    justify-content: center;
-} */
-
 footer {
     display: flex;
     background-color: transparent;
     text-align: initial;
     color: #f5f5f5;
     justify-content: center;
-    padding-bottom: 25px !important;
-    max-width: 1400px;
+    padding-bottom: 30px !important;
+    max-width: 1450px;
     margin: auto;
+    margin-top: 30px;
 }
 
 .footer-bg {
-    margin-top: 20px;
     background-color: #262626;
     width: 97%;
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
 }
 
@@ -650,7 +640,7 @@ footer {
     width: 60px;
     margin: 0 5px;
     overflow: hidden;
-    background: #262626;
+    background-image: linear-gradient(120deg, #E1B2AE 0%, #B3E3F7 100%);
     border-radius: 50px;
     cursor: pointer;
     align-items: center;
@@ -689,7 +679,7 @@ footer {
 }
 
 .wrapper .button:nth-child(3):hover .icon {
-    background: #2196F3;
+    background: #252525;
 }
 
 .wrapper .button .icon i {
@@ -700,6 +690,13 @@ footer {
 
 .wrapper .button:hover .icon i {
     color: whitesmoke;
+}
+
+.wrapper .button:nth-child(1):hover .icon i {
+    background: whitesmoke;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .wrapper .button span {
@@ -719,7 +716,30 @@ footer {
 }
 
 .wrapper .button:nth-child(3) span {
-    color: #2196F3;
+    color: #252525;
+}
+
+.icon-email {
+    color: #252525;
+}
+
+.icon-facebook {
+    color: #4267B2;
+}
+
+.icon-instagram h3 {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-instagram i:before {
+    display: inline;
 }
 
 
@@ -760,7 +780,7 @@ footer {
     opacity: 0;
     transform: translateY(150px);
     transition: all .5s ease;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
 }
 
 .scrollToTopBtn:hover {
@@ -912,7 +932,7 @@ i.bi.bi-chevron-bar-up {
         right: 35px;
     }
     .allSections {
-        border-radius: 40px;
+        border-radius: 30px;
     }
 }
 
