@@ -720,6 +720,27 @@ footer {
 /* Scroll Up Button */
 
 .scrollToTopBtn {
+    display: inline-block;
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #262626;
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    bottom: 55px;
+    right: 5%;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all .5s ease;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* .scrollToTopBtn {
     display: flex;
     position: fixed;
     align-items: center;
@@ -741,7 +762,7 @@ footer {
     transform: translateY(150px);
     transition: all .5s ease;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-}
+} */
 
 .showBtn {
     opacity: 0.75;
