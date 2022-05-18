@@ -1,3 +1,7 @@
+/**
+ * Menu Overlay - Adding Blur
+ */
+
 // Opens the overlay
 function openNav() {
     var blurElement = document.getElementById("main");
@@ -11,7 +15,6 @@ function openNav() {
     blurElement.classList.add("blur-filter");
     document.getElementById("myNav").style.width = "100%";
 }
-
 
 // Closes the overlay
 function closeNav() {
@@ -27,26 +30,62 @@ function closeNav() {
 }
 
 
-// Disable scrolling when menu is opened
-function disableScrolling() {
-    var x = window.scrollX;
-    var y = window.scrollY;
-    window.onscroll = function() { window.scrollTo(x, y); };
+/**
+ * Disable Scrolling
+ */
+
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = { 32: 1, 33: 1, 34: 1, 35: 1, 36: 1, 37: 1, 38: 1, 39: 1, 40: 1 };
+
+function preventDefault(e) {
+    e.preventDefault();
 }
 
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+    window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+        get: function() { supportsPassive = true; }
+    }));
+} catch (e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// Disable scrolling when menu is opened
+function disableScrolling() {
+    window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+    window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+    window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+    window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
 
 // Enable scrolling when menu is closed
 function enableScrolling() {
-    window.onscroll = null;
+    window.removeEventListener('DOMMouseScroll', preventDefault, false);
+    window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+    window.removeEventListener('touchmove', preventDefault, wheelOpt);
+    window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
 }
 
 
-// Scroll Up Button
+/**
+ * Scroll Up Button
+ */
+
 var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
 var rootElement = document.documentElement;
 
 function handleScroll() {
-    var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+    var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
     if ((rootElement.scrollTop / scrollTotal) > 0.33) {
         scrollToTopBtn.classList.add("showBtn")
     } else {
@@ -64,7 +103,10 @@ scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
 
 
-// Scroll Up Navbar
+/**
+ * Scrolls up the navbar
+ */
+
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
 }
@@ -82,7 +124,11 @@ async function handleNavbar() {
 }
 document.addEventListener("scroll", handleNavbar);
 
-// Scroll Background Blur
+
+/**
+ * Background Image Blur on scroll
+ */
+
 function handleImageBlur() {
     var blur = window.pageYOffset;
     opacityVal = (blur / 300.0);
