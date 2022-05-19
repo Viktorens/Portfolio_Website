@@ -1,4 +1,10 @@
 /**
+ * Copyright Foter
+ */
+document.getElementById("copyright").innerHTML = "&copy" + new Date().getFullYear() + " Victor Greavu | Cluj Napoca, România";
+
+
+/**
  * Menu Overlay - Adding Blur
  */
 
