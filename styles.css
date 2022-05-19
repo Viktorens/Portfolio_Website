@@ -551,6 +551,7 @@ p {
 
 .image-background-right {
     border-radius: 0 50px 50px 0;
+    z-index: 1;
 }
 
 .imageRight {
