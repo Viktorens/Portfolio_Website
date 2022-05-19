@@ -664,7 +664,7 @@ footer {
 }
 
 .wrapper .button:nth-child(2):hover {
-    width: 215px;
+    width: 235px;
 }
 
 .wrapper .button:nth-child(3):hover {
@@ -682,11 +682,15 @@ footer {
 }
 
 .wrapper .button:nth-child(1):hover .icon {
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
 .wrapper .button:nth-child(2):hover .icon {
-    background: #4267B2;
+    background: -moz-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
+    background: -webkit-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
+    background: linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
 }
 
 .wrapper .button:nth-child(3):hover .icon {
@@ -703,9 +707,10 @@ footer {
     color: whitesmoke;
 }
 
-.wrapper .button:nth-child(1):hover .icon i {
-    -webkit-background-clip: text;
+.wrapper .button:nth-child(1):hover .icon i,
+.wrapper .button:nth-child(2):hover .icon i {
     background: whitesmoke;
+    -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -734,10 +739,6 @@ footer {
     color: #252525;
 }
 
-.icon-facebook {
-    color: #4267B2;
-}
-
 .icon-instagram h3 {
     background: #f09433;
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -749,6 +750,18 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
+.icon-messenger h3 {
+    background: #FF6968;
+    background: -moz-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
+    background: -webkit-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
+    background: linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-messenger i:before,
 .icon-instagram i:before {
     display: inline;
 }
