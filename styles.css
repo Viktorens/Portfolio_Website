@@ -1,3 +1,14 @@
+:root {
+    /* Color Pallete */
+    --dark-color: #E1B2AE;
+    --light-color: #B3E3F7;
+    --background-primary-color: #252525;
+    --background-secondary-color: black;
+    --text-primary-color: whitesmoke;
+    --text-secondary-color: #252525;
+    --panel-primary-color: #161616;
+}
+
 html * {
     font-family: Montserrat;
     box-sizing: border-box;
@@ -12,7 +23,7 @@ body {
 
 a:hover {
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--text-primary-color);
 }
 
 p {
@@ -27,7 +38,7 @@ p {
     -moz-transition: all 0.6s ease-out;
     -o-transition: all 0.6s ease-out;
     transition: all 0.6s ease-out;
-    filter: blur(20px);
+    filter: blur(30px);
 }
 
 .no-blur-filter {
@@ -51,7 +62,7 @@ p {
 
 .arrow:before,
 .arrow:after {
-    background: whitesmoke;
+    background: var(--text-primary-color);
     content: '';
     display: block;
     height: 5px;
@@ -121,7 +132,7 @@ p {
 .overlay-content h4 {
     padding: 8px;
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--text-primary-color);
     display: block;
     /* Display block instead of inline */
     margin: 0;
@@ -143,7 +154,7 @@ p {
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #f1f1f1;
+    color: var(--text-primary-color);
 }
 
 
@@ -197,11 +208,11 @@ p {
     text-align: center;
     position: relative;
     top: 40%;
-    color: whitesmoke;
+    color: var(--text-primary-color);
     font-size: 30px;
     font-weight: 300;
     cursor: default;
-    background: #262626;
+    background: var(--background-primary-color);
     border-radius: 50px;
     width: 500px;
     margin: auto;
@@ -242,7 +253,7 @@ p {
 
 .bannerButton {
     text-decoration: none;
-    color: whitesmoke !important;
+    color: var(--text-primary-color) !important;
 }
 
 .bannerWrapper .bannerButton {
@@ -251,7 +262,7 @@ p {
     width: 60px;
     margin: 0 5px;
     overflow: hidden;
-    background: #060606;
+    background: var(--background-secondary-color);
     border-radius: 50px;
     cursor: pointer;
     align-items: center;
@@ -274,7 +285,7 @@ p {
 }
 
 .bannerWrapper .bannerButton:hover .icon {
-    background: #060606;
+    background: var(--background-secondary-color);
 }
 
 .bannerWrapper .bannerButton .icon i {
@@ -284,7 +295,7 @@ p {
 }
 
 .bannerWrapper .bannerButton:hover .icon i {
-    color: whitesmoke;
+    color: var(--text-primary-color);
 }
 
 .bannerWrapper .bannerButton span {
@@ -293,7 +304,7 @@ p {
     line-height: 60px;
     margin-left: 5px;
     transition: all 0.3s ease-out;
-    color: whitesmoke;
+    color: var(--text-primary-color);
 }
 
 
@@ -302,8 +313,8 @@ p {
 .line {
     align-items: center;
     width: 75px;
-    border: 4px solid #E1B2AE;
-    background: #E1B2AE;
+    border: 4px solid var(--dark-color);
+    background: var(--dark-color);
     border-radius: 10px;
     margin: auto;
     margin-bottom: 50px;
@@ -317,9 +328,9 @@ p {
 .allSections {
     max-width: 1400px;
     margin: auto;
-    color: whitesmoke;
-    background: #262626;
-    border: 50px solid #262626;
+    color: var(--text-primary-color);
+    background: var(--background-primary-color);
+    border: 50px solid var(--background-primary-color);
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
     border-radius: 30px;
     width: 95%;
@@ -331,11 +342,11 @@ p {
 .contactTitle h3 {
     text-align: center;
     padding: 8px;
-    color: #252525;
+    color: var(--text-secondary-color);
     font-size: 30px;
     font-weight: 300;
     cursor: default;
-    background-image: linear-gradient(120deg, #E1B2AE 0%, #B3E3F7 100%);
+    background-image: linear-gradient(120deg, var(--dark-color) 0%, var(--light-color) 100%);
     border-radius: 50px;
     width: 230px;
     margin: auto;
@@ -360,7 +371,7 @@ p {
 }
 
 .categoryAbout {
-    color: whitesmoke;
+    color: var(--text-primary-color);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -431,7 +442,7 @@ p {
 
 .imageOverlay {
     display: inline;
-    color: whitesmoke;
+    color: var(--text-primary-color);
     position: absolute;
     padding: 5px;
     width: 100%;
@@ -448,8 +459,8 @@ p {
 }
 
 .categoryRight {
-    color: whitesmoke;
-    background: #161616;
+    color: var(--text-primary-color);
+    background: var(--panel-primary-color);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -467,7 +478,7 @@ p {
 }
 
 .categoryRight:hover {
-    background: #060606;
+    background: var(--background-secondary-color);
     transition: all 0.3s ease-out;
 }
 
@@ -490,8 +501,8 @@ p {
 }
 
 .categoryLeft {
-    color: whitesmoke;
-    background: #161616;
+    color: var(--text-primary-color);
+    background: var(--panel-primary-color);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -509,7 +520,7 @@ p {
 }
 
 .categoryLeft:hover {
-    background: #060606;
+    background: var(--background-secondary-color);
     transition: all 0.3s ease-out;
 }
 
@@ -535,11 +546,11 @@ p {
 
 .categoryLink {
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--text-primary-color);
 }
 
 .underlineMagical {
-    background-image: linear-gradient(120deg, #E1B2AE 0%, #B3E3F7 100%);
+    background-image: linear-gradient(120deg, var(--dark-color) 0%, var(--light-color) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 88%;
@@ -549,13 +560,13 @@ p {
 }
 
 .underlineMagical:hover {
-    background-image: linear-gradient(120deg, #E1B2AE 0%, #B3E3F7 100%);
-    color: #252525;
+    background-image: linear-gradient(120deg, var(--dark-color) 0%, var(--light-color) 100%);
+    color: var(--text-secondary-color);
     transition: all 0.3s ease-out;
 }
 
 .column .icon {
-    color: whitesmoke;
+    color: var(--text-primary-color);
     opacity: 1;
 }
 
@@ -595,8 +606,8 @@ p {
 
 .contactLinks {
     cursor: pointer;
-    text-decoration: whitesmoke;
-    color: whitesmoke;
+    text-decoration: var(--text-primary-color);
+    color: var(--text-primary-color);
     padding-top: 20px;
     justify-content: center;
     display: flex;
@@ -616,7 +627,7 @@ footer {
     display: flex;
     background-color: transparent;
     text-align: initial;
-    color: #f5f5f5;
+    color: var(--text-primary-color);
     justify-content: center;
     padding-bottom: 30px !important;
     max-width: 1450px;
@@ -625,7 +636,7 @@ footer {
 }
 
 .footer-bg {
-    background-color: #262626;
+    background-color: var(--background-primary-color);
     width: 95%;
     border-radius: 30px;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
@@ -642,7 +653,7 @@ footer {
 
 .button {
     text-decoration: none;
-    color: whitesmoke;
+    color: var(--text-primary-color);
 }
 
 .wrapper .button {
@@ -651,7 +662,7 @@ footer {
     width: 60px;
     margin: 0 5px;
     overflow: hidden;
-    background-image: linear-gradient(120deg, #E1B2AE 0%, #B3E3F7 100%);
+    background-image: linear-gradient(120deg, var(--dark-color) 0%, var(--light-color) 100%);
     border-radius: 50px;
     cursor: pointer;
     align-items: center;
@@ -694,7 +705,7 @@ footer {
 }
 
 .wrapper .button:nth-child(3):hover .icon {
-    background: #252525;
+    background: var(--background-primary-color);
 }
 
 .wrapper .button .icon i {
@@ -704,12 +715,12 @@ footer {
 }
 
 .wrapper .button:hover .icon i {
-    color: whitesmoke;
+    color: var(--text-primary-color);
 }
 
 .wrapper .button:nth-child(1):hover .icon i,
 .wrapper .button:nth-child(2):hover .icon i {
-    background: whitesmoke;
+    background: var(--text-primary-color);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -732,11 +743,11 @@ footer {
 }
 
 .wrapper .button:nth-child(3) span {
-    color: #252525;
+    color: var(--text-secondary-color);
 }
 
 .icon-email {
-    color: #252525;
+    color: var(--text-secondary-color);
 }
 
 .icon-instagram h3 {
@@ -751,7 +762,7 @@ footer {
 }
 
 .icon-messenger h3 {
-    background: #FF6968;
+    background: #0695FF;
     background: -moz-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
     background: -webkit-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
     background: linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
@@ -771,8 +782,8 @@ footer {
 
 .copyright {
     cursor: pointer;
-    text-decoration: whitesmoke;
-    color: whitesmoke;
+    text-decoration: var(--text-primary-color);
+    color: var(--text-primary-color);
     margin: 0% 0% 1% 1%;
 }
 
@@ -787,7 +798,7 @@ footer {
     display: inline-block;
     position: fixed;
     border: none;
-    color: #f5f5f5;
+    color: var(--text-primary-color);
     height: 60px;
     width: 60px;
     margin: 0 5px;
@@ -808,7 +819,7 @@ footer {
 }
 
 .scrollToTopBtn:hover {
-    background: #262626;
+    background: var(--background-primary-color);
     opacity: 1;
 }
 
