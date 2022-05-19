@@ -512,6 +512,7 @@ p {
 
 .image-background-left {
     border-radius: 50px 0 0 50px;
+    z-index: 1;
 }
 
 .imageLeft {
