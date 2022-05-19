@@ -3,6 +3,9 @@
  */
 document.getElementById("copyright").innerHTML = "&copy " + new Date().getFullYear() + " Victor Greavu | Cluj Napoca, România";
 
+function openInNewTab(url) {
+    window.open(url, '_blank').focus();
+}
 
 /**
  * Menu Overlay - Adding Blur
