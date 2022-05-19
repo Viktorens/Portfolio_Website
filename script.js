@@ -136,11 +136,14 @@ document.addEventListener("scroll", handleNavbar);
 
 /**
  * Background Image Blur on scroll
+ * Banner Title Opacity on scroll
  */
 
 function handleImageBlur() {
     var blur = window.pageYOffset;
     opacityVal = (blur / 300.0);
     document.getElementById("blurred-img").style.opacity = opacityVal;
+    document.getElementById("bannerTitle").style.opacity = 1 - opacityVal;
+
 }
 document.addEventListener("scroll", handleImageBlur);
