@@ -217,9 +217,9 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 
-readTextFile("data.json", function(text) {
+readTextFile("../js/data.json", function(text) {
     var data = JSON.parse(text); //parse JSON
-    document.documentElement.style.setProperty('--dark-color', data[1]);
-    document.documentElement.style.setProperty('--light-color', data[0]);
+    document.documentElement.style.setProperty('--dark-color', data[0]);
+    document.documentElement.style.setProperty('--light-color', data[1]);
 
 });
