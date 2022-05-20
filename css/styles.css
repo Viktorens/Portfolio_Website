@@ -678,7 +678,7 @@ footer {
     width: 60px;
     margin: 0 5px;
     overflow: hidden;
-    background-image: linear-gradient(120deg, var(--dark-color) 0%, var(--light-color) 100%);
+    background-image: var(--background-primary-color);
     border-radius: 50px;
     cursor: pointer;
     align-items: center;
@@ -759,11 +759,11 @@ footer {
 }
 
 .wrapper .button:nth-child(3) span {
-    color: var(--text-secondary-color);
+    color: var(--text-primary-color);
 }
 
 .icon-email {
-    color: var(--text-secondary-color);
+    color: var(--text-primary-color);
 }
 
 .icon-instagram h3 {

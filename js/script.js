@@ -141,7 +141,7 @@ document.addEventListener("scroll", handleNavbar);
 
 function handleImageBlur() {
     var blur = window.pageYOffset;
-    opacityVal = (blur / 300.0);
+    var opacityVal = (blur / 300.0);
     document.getElementById("blurred-img").style.opacity = opacityVal;
     document.getElementById("bannerTitle").style.opacity = 1 - opacityVal;
 
@@ -165,8 +165,8 @@ function setColorScheme(scheme) {
             break;
         case 'light':
             // Light
-            document.documentElement.style.setProperty('--background-primary-color', 'whitesmoke');
-            document.documentElement.style.setProperty('--background-secondary-color', 'whitesmoke');
+            document.documentElement.style.setProperty('--background-primary-color', 'white');
+            document.documentElement.style.setProperty('--background-secondary-color', '#f0f0f0');
             document.documentElement.style.setProperty('--text-primary-color', '#252525');
             document.documentElement.style.setProperty('--text-secondary-color', '#252525');
             document.documentElement.style.setProperty('--panel-primary-color', 'white');
