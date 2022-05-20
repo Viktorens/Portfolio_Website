@@ -200,6 +200,11 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', eve
     setColorScheme(newColorScheme);
 });
 
+
+/**
+ * Loading and reading json file
+ */
+
 function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
@@ -211,7 +216,6 @@ function readTextFile(file, callback) {
     }
     rawFile.send(null);
 }
-
 
 readTextFile("data.json", function(text) {
     var data = JSON.parse(text); //parse JSON
