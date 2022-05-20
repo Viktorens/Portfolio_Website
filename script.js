@@ -147,3 +147,49 @@ function handleImageBlur() {
 
 }
 document.addEventListener("scroll", handleImageBlur);
+
+
+/**
+ * Dark Mode
+ */
+
+function setColorScheme(scheme) {
+    switch (scheme) {
+        case 'dark':
+            // Dark
+            document.documentElement.style.setProperty('--background-primary-color', '#252525');
+            document.documentElement.style.setProperty('--background-secondary-color', 'black');
+            document.documentElement.style.setProperty('--text-primary-color', 'whitesmoke');
+            document.documentElement.style.setProperty('--text-secondary-color', '#252525');
+            document.documentElement.style.setProperty('--panel-primary-color', '#161616');
+            break;
+        case 'light':
+            // Light
+            document.documentElement.style.setProperty('--background-primary-color', 'whitesmoke');
+            document.documentElement.style.setProperty('--background-secondary-color', 'whitesmoke');
+            document.documentElement.style.setProperty('--text-primary-color', '#252525');
+            document.documentElement.style.setProperty('--text-secondary-color', '#252525');
+            document.documentElement.style.setProperty('--panel-primary-color', 'white');
+            break;
+        default:
+            // Default
+            console.log('default');
+            break;
+    }
+}
+
+function getPreferredColorScheme() {
+    if (window.matchMedia) {
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        } else {
+            return 'light';
+        }
+    }
+    return 'light';
+}
+
+if (window.matchMedia) {
+    var colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    colorSchemeQuery.addEventListener('change', setColorScheme(getPreferredColorScheme()));
+}

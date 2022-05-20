@@ -2,11 +2,11 @@
     /* Color Pallete */
     --dark-color: #E1B2AE;
     --light-color: #B3E3F7;
-    --background-primary-color: #252525;
-    --background-secondary-color: black;
-    --text-primary-color: whitesmoke;
-    --text-secondary-color: #252525;
-    --panel-primary-color: #161616;
+    /* --background-primary-color: #252525; */
+    /* --background-secondary-color: black; */
+    /* --text-primary-color: whitesmoke; */
+    /* --text-secondary-color: #252525; */
+    /* --panel-primary-color: #161616; */
 }
 
 html * {
@@ -106,14 +106,13 @@ p {
 .overlay {
     height: 100%;
     position: fixed;
-    z-index: 2;
     left: 0;
     top: 0px;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.75);
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 5;
+    background: var(--background-secondary-color);
+    opacity: 0.75;
 }
 
 
@@ -742,7 +741,7 @@ footer {
 
 .wrapper .button:nth-child(1):hover .icon i,
 .wrapper .button:nth-child(2):hover .icon i {
-    background: var(--text-primary-color);
+    background: whitesmoke;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
