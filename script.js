@@ -189,7 +189,13 @@ function getPreferredColorScheme() {
     return 'light';
 }
 
+// Listens for changes
 if (window.matchMedia) {
     var colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
     colorSchemeQuery.addEventListener('change', setColorScheme(getPreferredColorScheme()));
 }
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    const newColorScheme = event.matches ? "dark" : "light";
+    setColorScheme(newColorScheme);
+});
