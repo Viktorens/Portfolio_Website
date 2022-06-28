@@ -1,5 +1,5 @@
 /**
- * Copyright Foter
+ * Copyright Footer
  */
 document.getElementById("copyright").innerHTML = "&copy " + new Date().getFullYear() + " Victor Greavu | Cluj Napoca, România";
 
@@ -140,11 +140,19 @@ document.addEventListener("scroll", handleNavbar);
  */
 
 function handleImageBlur() {
-    var blur = window.pageYOffset;
-    var opacityVal = (blur / 300.0);
-    document.getElementById("blurred-img").style.opacity = opacityVal;
-    document.getElementById("bannerTitle").style.opacity = 1 - opacityVal;
+    var windowScroll = window.pageYOffset;
+    var blurAmount = (windowScroll / 300.0)*10;
+    var scaleAmount = ((windowScroll / 300.0) / 100 + 1)*1.05;
+    
+    document.getElementById("blurred-img").style.filter= `blur(${blurAmount}px)`;
+    document.getElementById("blurred-img").style.transform= `scale(${scaleAmount})`;
 
+    if (blurAmount >= 10 )
+        document.getElementById("blurred-img").style.filter = `blur(${10}px)`;
+    if (scaleAmount >= 1.1 )
+        document.getElementById("blurred-img").style.transform = `scale(${1.1})`;
+    
+    document.getElementById("bannerTitle").style.opacity = 1 - blurAmount / 10;
 }
 document.addEventListener("scroll", handleImageBlur);
 
