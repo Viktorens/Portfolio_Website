@@ -857,6 +857,7 @@ i.bi.bi-chevron-bar-up {
     .banner h1 {
         font-size: 30px;
         width: 300px;
+        border-radius: 20px;
     }
     .banner-button {
         font-size: 25px;
