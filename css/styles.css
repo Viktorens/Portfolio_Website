@@ -25,9 +25,7 @@ p {
     margin: 0;
 }
 
-
 /* Add blur */
-
 .blur-filter {
     -webkit-transition: all 0.6s ease-out;
     -moz-transition: all 0.6s ease-out;
@@ -83,17 +81,17 @@ p {
         opacity: 0;
         top: 75%;
     }
+
     60% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
 }
 
-
 /* --- The Overlay (background) --- */
-
 #my-nav {
     width: 0%;
 }
@@ -110,9 +108,7 @@ p {
     opacity: 0.75;
 }
 
-
 /* Position the content inside the overlay */
-
 .overlay-content {
     position: relative;
     width: 100%;
@@ -120,9 +116,7 @@ p {
     margin-top: 30px;
 }
 
-
 /* Title of overlay */
-
 .overlay-content h4 {
     padding: 8px;
     text-decoration: none;
@@ -131,9 +125,7 @@ p {
     margin: 0;
 }
 
-
 /* The navigation links inside the overlay */
-
 .overlay a {
     padding: 8px;
     text-decoration: none;
@@ -142,24 +134,18 @@ p {
     transition: 0.3s;
 }
 
-
 /* When you mouse over the navigation links, change their color */
-
 .overlay a:hover,
 .overlay a:focus {
     color: var(--text-primary-color);
 }
 
-
 /* Position the close button (top right corner) */
-
 .overlay .close-btn {
     position: absolute;
 }
 
-
 /* Background Image */
-
 .img-src {
     position: fixed;
     top: 0;
@@ -174,9 +160,7 @@ p {
     background-size: cover;
 }
 
-
 /* --- Banner --- */
-
 #banner-title {
     height: 105vh;
 }
@@ -198,9 +182,7 @@ p {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-
 /* --- Menu Button --- */
-
 .menubutton {
     display: flex;
     position: fixed;
@@ -285,9 +267,7 @@ p {
     color: var(--text-primary-color);
 }
 
-
 /* Line */
-
 .line {
     align-items: center;
     width: 75px;
@@ -300,9 +280,7 @@ p {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-
 /* --- Sections --- */
-
 .all-sections {
     max-width: 1400px;
     margin: auto;
@@ -333,9 +311,7 @@ p {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-
 /* About Section */
-
 .about p:nth-child(2) {
     text-indent: 1.5rem;
     font-size: 15px;
@@ -392,9 +368,7 @@ p {
 
 }
 
-
 /* Portofolio Section */
-
 .column {
     position: relative;
     float: left;
@@ -441,9 +415,7 @@ p {
     transition: all 0.6s ease-out;
 }
 
-
 /* Images + Categories */
-
 .imageOverlay {
     display: inline;
     color: var(--text-primary-color);
@@ -576,9 +548,7 @@ p {
     opacity: 1;
 }
 
-
 /* Projects Section */
-
 .projects p {
     text-indent: 3rem;
     font-size: 15px;
@@ -591,9 +561,7 @@ p {
     text-align: justify;
 }
 
-
 /* Contact Section */
-
 .contact p {
     font-size: 15px;
     line-height: 26px;
@@ -622,9 +590,7 @@ p {
     text-decoration: underline;
 }
 
-
 /* --- Footer --- */
-
 footer {
     display: flex;
     background-color: transparent;
@@ -644,9 +610,7 @@ footer {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
 }
 
-
 /* --- Social Media Buttons --- */
-
 .wrapper {
     display: flex;
     place-content: center;
@@ -759,7 +723,7 @@ footer {
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -770,7 +734,7 @@ footer {
     background: -moz-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
     background: -webkit-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
     background: linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -781,9 +745,7 @@ footer {
     display: inline;
 }
 
-
 /* --- Copyright --- */
-
 .copyright {
     cursor: pointer;
     text-decoration: var(--text-primary-color);
@@ -795,9 +757,7 @@ footer {
     text-decoration: underline;
 }
 
-
 /* Scroll Up Button */
-
 .scroll-to-top-btn {
     display: inline-block;
     position: fixed;
@@ -840,128 +800,150 @@ i.bi.bi-chevron-bar-up {
     outline: none;
 }
 
-
 /* --- Media Queries ---- */
 
-
 /* Extra small devices (portrait phones, less than 576px)*/
-
 @media (max-width: 576px) {
     body {
         text-align: center;
     }
+
     .banner h1 {
         font-size: 30px;
         width: 300px;
         border-radius: 20px;
     }
+
     .banner-button {
         font-size: 25px;
     }
+
     .overlay h4 {
         font-size: 25px;
     }
+
     .overlay-content {
         top: 15%;
     }
+
     .overlay a {
         font-size: 20px
     }
+
     .overlay .close-btn {
         font-size: 40px;
         top: 15px;
         right: 35px;
     }
+
     .copyright {
         font-size: 12px;
         text-align: center;
         justify-content: center;
     }
+
     .category-left {
         font-size: 14px;
         border-radius: 30px 0 0 30px;
     }
+
     .category-right {
         font-size: 14px;
         border-radius: 0 30px 30px 0;
     }
+
     .image-left {
         border-radius: 30px 0 0 30px;
     }
+
     .image-right {
         border-radius: 0 30px 30px 0;
     }
+
     .image-background-right {
         border-radius: 0 30px 30px 0;
     }
+
     .image-background-left {
         border-radius: 30px 0 0 30px;
     }
+
     .about-name {
         font-size: 25px;
     }
+
     .wrapper .button:nth-child(1):hover {
         width: 60px;
     }
+
     .wrapper .button:nth-child(2):hover {
         width: 60px;
     }
+
     .wrapper .button:nth-child(3):hover {
         width: 60px;
     }
+
     .banner-wrapper .banner-button:hover {
         width: 60px;
     }
 }
 
-
 /* Small devices (landscape phones, 576px and up) */
-
 @media (min-width: 576px) {
     .banner h1 {
         font-size: 50px;
     }
+
     .banner-button {
         font-size: 30px;
     }
+
     .overlay h4 {
         font-size: 30px;
     }
+
     .overlay-content {
         top: 15%;
     }
+
     .overlay a {
         font-size: 25px
     }
+
     .overlay .close-btn {
         font-size: 40px;
         top: 15px;
         right: 35px;
     }
+
     .about-name {
         font-size: 45px;
     }
 }
 
-
 /* Medium devices (tablets, 768px and up) */
-
 @media (min-width: 768px) {
     body {
         text-align: initial;
     }
+
     .banner-button {
         font-size: 30px;
     }
+
     .overlay h4 {
         font-size: 35px;
     }
+
     .overlay-content {
         top: 25%;
     }
+
     .overlay a {
         font-size: 30px
     }
+
     .overlay .close-btn {
         font-size: 40px;
         top: 15px;
@@ -969,16 +951,16 @@ i.bi.bi-chevron-bar-up {
     }
 }
 
-
 /* Large devices (desktops, 992px and up) */
-
 @media (min-width: 992px) {
     .overlay h4 {
         font-size: 40px;
     }
+
     .overlay a {
         font-size: 36px
     }
+
     .overlay .close-btn {
         top: 20px;
         right: 45px;
@@ -986,7 +968,5 @@ i.bi.bi-chevron-bar-up {
     }
 }
 
-
 /* Extra large devices (large desktops, 1200px and up) */
-
 @media (min-width: 1200px) {}

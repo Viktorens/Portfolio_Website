@@ -62,9 +62,9 @@ function preventDefaultForScrollKeys(e) {
 var supportsPassive = false;
 try {
     window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
-        get: function() { supportsPassive = true; }
+        get: function () { supportsPassive = true; }
     }));
-} catch (e) {}
+} catch (e) { }
 
 var wheelOpt = supportsPassive ? { passive: false } : false;
 var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
@@ -141,17 +141,17 @@ document.addEventListener("scroll", handleNavbar);
 
 function handleImageBlur() {
     var windowScroll = window.pageYOffset;
-    var blurAmount = (windowScroll / 300.0)*10;
-    var scaleAmount = ((windowScroll / 300.0) / 100 + 1)*1.05;
-    
-    document.getElementById("blurred-img").style.filter= `blur(${blurAmount}px)`;
-    document.getElementById("blurred-img").style.transform= `scale(${scaleAmount})`;
+    var blurAmount = (windowScroll / 300.0) * 10;
+    var scaleAmount = ((windowScroll / 300.0) / 100 + 1) * 1.05;
 
-    if (blurAmount >= 10 )
-        document.getElementById("blurred-img").style.filter = `blur(${10}px)`;
-    if (scaleAmount >= 1.1 )
-        document.getElementById("blurred-img").style.transform = `scale(${1.1})`;
-    
+    document.getElementById("blurred-img").style.filter = `blur(${ blurAmount }px)`;
+    document.getElementById("blurred-img").style.transform = `scale(${ scaleAmount })`;
+
+    if (blurAmount >= 10)
+        document.getElementById("blurred-img").style.filter = `blur(${ 10 }px)`;
+    if (scaleAmount >= 1.1)
+        document.getElementById("blurred-img").style.transform = `scale(${ 1.1 })`;
+
     document.getElementById("banner-title").style.opacity = 1 - blurAmount / 10;
 }
 document.addEventListener("scroll", handleImageBlur);
@@ -217,7 +217,7 @@ function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
     rawFile.overrideMimeType("application/json");
     rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function() {
+    rawFile.onreadystatechange = function () {
         if (rawFile.readyState === 4 && rawFile.status == "200") {
             callback(rawFile.responseText);
         }
@@ -225,7 +225,7 @@ function readTextFile(file, callback) {
     rawFile.send(null);
 }
 
-readTextFile("../js/colors.json", function(text) {
+readTextFile("../js/colors.json", function (text) {
     var colors = JSON.parse(text); //parse JSON
     document.documentElement.style.setProperty('--dark-color', colors[0]);
     document.documentElement.style.setProperty('--light-color', colors[1]);
