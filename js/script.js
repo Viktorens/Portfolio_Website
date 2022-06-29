@@ -14,27 +14,29 @@ function openInNewTab(url) {
 // Opens the overlay
 function openNav() {
     var blurElement = document.getElementById("main");
-    var menuButton = document.getElementById("navbarButton");
-    var scrollToTopButton = document.getElementById("scrollToTopButton");
+    var menuButton = document.getElementById("navbar-button");
+    var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    scrollToTopButton.classList.remove("showBtn");
+    scrollToTopButton.style.opacity = 0;
     menuButton.classList.remove("no-transparent-menubutton");
     menuButton.classList.add("transparent-menubutton");
     blurElement.classList.remove("no-blur-filter");
     blurElement.classList.add("blur-filter");
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("my-nav").style.width = "100%";
 }
 
 // Closes the overlay
 function closeNav() {
     var blurElement = document.getElementById("main");
-    var menuButton = document.getElementById("navbarButton");
+    var menuButton = document.getElementById("navbar-button");
+    var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
+    scrollToTopButton.style.opacity = 0.75;
     menuButton.classList.remove("transparent-menubutton");
     menuButton.classList.add("no-transparent-menubutton");
     blurElement.classList.remove("blur-filter");
     blurElement.classList.add("no-blur-filter");
-    document.getElementById("myNav").style.width = "0%";
+    document.getElementById("my-nav").style.width = "0%";
     document.getElementById("navbar").style.top = "0px";
 }
 
@@ -90,15 +92,15 @@ function enableScrolling() {
  * Scroll Up Button
  */
 
-var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+var scrollToTopBtn = document.querySelector(".scroll-to-top-btn");
 var rootElement = document.documentElement;
 
 function handleScroll() {
     var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
     if ((rootElement.scrollTop / scrollTotal) > 0.33) {
-        scrollToTopBtn.classList.add("showBtn")
+        scrollToTopBtn.classList.add("show-btn")
     } else {
-        scrollToTopBtn.classList.remove("showBtn")
+        scrollToTopBtn.classList.remove("show-btn")
     }
 }
 
@@ -152,7 +154,7 @@ function handleImageBlur() {
     if (scaleAmount >= 1.1 )
         document.getElementById("blurred-img").style.transform = `scale(${1.1})`;
     
-    document.getElementById("bannerTitle").style.opacity = 1 - blurAmount / 10;
+    document.getElementById("banner-title").style.opacity = 1 - blurAmount / 10;
 }
 document.addEventListener("scroll", handleImageBlur);
 
