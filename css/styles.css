@@ -160,10 +160,6 @@ p {
 
 /* Background Image */
 
-#blurred-image-container {
-    overflow: hidden;
-}
-
 .img-src {
     position: fixed;
     top: 0;
