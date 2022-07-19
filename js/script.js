@@ -23,6 +23,8 @@ function openNav() {
     blurElement.classList.remove("no-blur-filter");
     blurElement.classList.add("blur-filter");
     document.getElementById("my-nav").style.width = "100%";
+
+    // document.getElementById("blurred-img").style.filter = `blur(${ 0 }px)`;
 }
 
 // Closes the overlay
@@ -152,7 +154,7 @@ function handleImageBlur() {
     if (scaleAmount >= 1.1)
         document.getElementById("blurred-img").style.transform = `scale(${ 1.1 })`;
 
-    document.getElementById("banner-title").style.opacity = 1 - blurAmount / 10;
+    // document.getElementById("banner-title").style.opacity = 1 - blurAmount / 10;
 }
 document.addEventListener("scroll", handleImageBlur);
 
@@ -166,17 +168,19 @@ function setColorScheme(scheme) {
         case 'dark':
             // Dark
             document.documentElement.style.setProperty('--background-primary-color', '#252525');
+            document.documentElement.style.setProperty('--background-primary-color-RGBA', 'rgba(37, 37, 37, 0.5)');
             document.documentElement.style.setProperty('--background-secondary-color', 'black');
             document.documentElement.style.setProperty('--text-primary-color', 'whitesmoke');
-            document.documentElement.style.setProperty('--text-secondary-color', '#252525');
+            document.documentElement.style.setProperty('--text-secondary-color', 'whitesmoke'); // Sections Title Color
             document.documentElement.style.setProperty('--panel-primary-color', '#161616');
             break;
         case 'light':
             // Light
             document.documentElement.style.setProperty('--background-primary-color', 'white');
+            document.documentElement.style.setProperty('--background-primary-color-RGBA', 'rgba(255, 255, 255, 0.5)');
             document.documentElement.style.setProperty('--background-secondary-color', '#f0f0f0');
             document.documentElement.style.setProperty('--text-primary-color', '#252525');
-            document.documentElement.style.setProperty('--text-secondary-color', '#252525');
+            document.documentElement.style.setProperty('--text-secondary-color', 'whitesmoke'); // Sections Title Color
             document.documentElement.style.setProperty('--panel-primary-color', 'white');
             break;
         default:
