@@ -104,8 +104,7 @@ p {
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 5;
-    background: var(--background-secondary-color);
-    opacity: 0.75;
+    background: var(--background-primary-color-RGBA);
 }
 
 /* Position the content inside the overlay */
@@ -153,7 +152,7 @@ p {
     left: 0;
     right: 0;
     z-index: -1;
-    background: rgba(0, 0, 0, 0)url(../img/backgroundPicture.jpg) center center;
+    background: rgba(0, 0, 0, 0)url(../img/backgroundPicture.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
