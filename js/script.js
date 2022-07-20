@@ -23,8 +23,6 @@ function openNav() {
     blurElement.classList.remove("no-blur-filter");
     blurElement.classList.add("blur-filter");
     document.getElementById("my-nav").style.width = "100%";
-
-    // document.getElementById("blurred-img").style.filter = `blur(${ 0 }px)`;
 }
 
 // Closes the overlay
