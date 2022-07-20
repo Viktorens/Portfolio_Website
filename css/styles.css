@@ -154,7 +154,6 @@ p {
     z-index: -1;
     background: rgba(0, 0, 0, 0)url(../img/backgroundPicture.jpg);
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
