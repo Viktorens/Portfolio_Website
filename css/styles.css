@@ -86,20 +86,10 @@ p {
     top: 0px;
     overflow-x: hidden;
     transition: 0.5s;
-    z-index: 5;
+    /* z-index: 5; */
     background: var(--background-primary-color-RGBA);
     -webkit-backdrop-filter: blur(40px) contrast(80%);
     backdrop-filter: blur(40px) contrast(80%);
-}
-
-.overlay-container {
-    transition-duration: 300ms;
-    z-index: -1;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
 }
 
 /* Position the content inside the overlay */
