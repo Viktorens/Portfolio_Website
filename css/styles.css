@@ -81,8 +81,8 @@ p {
 
 .overlay {
     background: var(--background-primary-color-RGBA);
-    -webkit-backdrop-filter: blur(40px) contrast(60%) !important;
-    backdrop-filter: blur(40px) contrast(60%) !important;
+    -webkit-backdrop-filter: blur(40px) contrast(60%);
+    backdrop-filter: blur(40px) contrast(60%);
     height: 100%;
     position: fixed;
     left: 0;
@@ -90,6 +90,11 @@ p {
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 5;
+}
+
+.hm {
+    -webkit-backdrop-filter: blur(40px) contrast(60%);
+    backdrop-filter: blur(40px) contrast(60%);
 }
 
 /* Position the content inside the overlay */
