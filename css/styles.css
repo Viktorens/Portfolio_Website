@@ -80,11 +80,11 @@ p {
 }
 
 .overlay {
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0px;
-    /* overflow-x: hidden; */
+    /* height: 100%; */
+    /* position: fixed; */
+    /* left: 0; */
+    /* top: 0px; */
+    overflow-x: hidden;
     transition: 0.5s;
     z-index: 5;
     background: var(--background-primary-color-RGBA);
