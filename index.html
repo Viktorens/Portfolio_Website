@@ -25,6 +25,18 @@
 
     <body>
         <!-- The menu overlay -->
+        <div id="my-nav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav(); enableScrolling()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <h4>Meniu</h4>
+                <a href="#despre-mine" onclick="closeNav(); enableScrolling()">Despre mine</a>
+                <a href="#portofoliu" onclick="closeNav(); enableScrolling()">Portofoliu</a>
+                <!-- <a href="#proiecte" onclick="closeNav(); enableScrolling()">Proiecte</a> -->
+                <a href="#contact" onclick="closeNav(); enableScrolling()">Contact</a>
+            </div>
+        </div>
         <!-- Menu Bar -->
         <div class="menubutton show-background" id="navbar">
             <div class="banner-wrapper" id="navbar-button">
@@ -46,18 +58,6 @@
             </div>
             <!-- Arrow -->
             <div class="arrow"></div>
-            <div id="my-nav" class="overlay">
-                <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="close-btn" onclick="closeNav(); enableScrolling()">&times;</a>
-                <!-- Overlay content -->
-                <div class="overlay-content">
-                    <h4>Meniu</h4>
-                    <a href="#despre-mine" onclick="closeNav(); enableScrolling()">Despre mine</a>
-                    <a href="#portofoliu" onclick="closeNav(); enableScrolling()">Portofoliu</a>
-                    <!-- <a href="#proiecte" onclick="closeNav(); enableScrolling()">Proiecte</a> -->
-                    <a href="#contact" onclick="closeNav(); enableScrolling()">Contact</a>
-                </div>
-            </div>
             <!-- Title -->
             <div id="banner-title" class="banner">
                 <div class="title-container">

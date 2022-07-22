@@ -81,8 +81,8 @@ p {
 
 .overlay {
     background: var(--background-primary-color-RGBA);
-    -webkit-backdrop-filter: blur(40px) contrast(60%);
-    backdrop-filter: blur(40px) contrast(60%);
+    -webkit-backdrop-filter: invert(70%);
+    backdrop-filter: invert(70%);
     height: 100%;
     position: fixed;
     left: 0;
