@@ -8,7 +8,7 @@ function openInNewTab(url) {
 }
 
 /**
- * Menu Overlay - Adding Blur
+ * Menu Overlay - Animations
  */
 
 // Opens the overlay
@@ -18,7 +18,6 @@ function openNav() {
 
     document.getElementById("my-nav").style.width = "100%";
     menuButton.style.top = "-100px";
-    menuButton.style.opacity = 0;
     scrollToTopButton.style.bottom = "-100px";
 }
 
@@ -29,7 +28,6 @@ function closeNav() {
 
     document.getElementById("my-nav").style.width = "0%";
     menuButton.style.top = "0";
-    menuButton.style.opacity = 1;
     scrollToTopButton.style.bottom = "50px";
 }
 
