@@ -88,8 +88,8 @@ p {
     transition: 0.5s;
     z-index: 5;
     background: var(--background-primary-color-RGBA);
-    -webkit-backdrop-filter: blur(40px);
-    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px) contrast(80%);
+    backdrop-filter: blur(40px) contrast(80%);
 }
 
 /* Position the content inside the overlay */
