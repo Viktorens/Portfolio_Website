@@ -208,6 +208,7 @@ p {
     justify-content: center;
     text-align: initial;
     z-index: 4;
+    transition: .4s;
 }
 
 .transparent-menubutton {

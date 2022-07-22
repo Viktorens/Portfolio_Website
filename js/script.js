@@ -14,28 +14,29 @@ function openInNewTab(url) {
 // Opens the overlay
 function openNav() {
     var blurElement = document.getElementById("main");
-    var menuButton = document.getElementById("navbar-button");
+    var menuButton = document.getElementById("navbar");
     var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    scrollToTopButton.classList.remove("show-btn");
-    menuButton.classList.remove("no-transparent-menubutton");
-    menuButton.classList.add("transparent-menubutton");
     blurElement.classList.remove("no-blur-filter");
     blurElement.classList.add("blur-filter");
     document.getElementById("my-nav").style.width = "100%";
+    menuButton.style.top = "-100px";
+    menuButton.style.opacity = 0;
+    scrollToTopButton.style.bottom = "-100px";
 }
 
 // Closes the overlay
 function closeNav() {
     var blurElement = document.getElementById("main");
-    var menuButton = document.getElementById("navbar-button");
+    var menuButton = document.getElementById("navbar");
+    var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    menuButton.classList.remove("transparent-menubutton");
-    menuButton.classList.add("no-transparent-menubutton");
     blurElement.classList.remove("blur-filter");
     blurElement.classList.add("no-blur-filter");
     document.getElementById("my-nav").style.width = "0%";
-    document.getElementById("navbar").style.top = "0px";
+    menuButton.style.top = "0";
+    menuButton.style.opacity = 1;
+    scrollToTopButton.style.bottom = "50px";
 }
 
 
