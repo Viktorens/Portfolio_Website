@@ -13,12 +13,9 @@ function openInNewTab(url) {
 
 // Opens the overlay
 function openNav() {
-    var blurElement = document.getElementById("main");
     var menuButton = document.getElementById("navbar");
     var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    blurElement.classList.remove("no-blur-filter");
-    blurElement.classList.add("blur-filter");
     document.getElementById("my-nav").style.width = "100%";
     menuButton.style.top = "-100px";
     menuButton.style.opacity = 0;
@@ -27,12 +24,9 @@ function openNav() {
 
 // Closes the overlay
 function closeNav() {
-    var blurElement = document.getElementById("main");
     var menuButton = document.getElementById("navbar");
     var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    blurElement.classList.remove("blur-filter");
-    blurElement.classList.add("no-blur-filter");
     document.getElementById("my-nav").style.width = "0%";
     menuButton.style.top = "0";
     menuButton.style.opacity = 1;
