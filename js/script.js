@@ -16,7 +16,7 @@ function openNav() {
     var menuButton = document.getElementById("navbar");
     var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    document.getElementById("my-nav").style.width = "100%";
+    document.getElementById("my-nav").style.left = "0%";
     menuButton.style.top = "-100px";
     scrollToTopButton.style.bottom = "-100px";
 }
@@ -26,7 +26,7 @@ function closeNav() {
     var menuButton = document.getElementById("navbar");
     var scrollToTopButton = document.getElementById("scroll-to-top-btn");
 
-    document.getElementById("my-nav").style.width = "0%";
+    document.getElementById("my-nav").style.left = "-100%";
     menuButton.style.top = "0";
     scrollToTopButton.style.bottom = "50px";
 }

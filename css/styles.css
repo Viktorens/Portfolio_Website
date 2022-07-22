@@ -76,7 +76,7 @@ p {
 
 /* --- The Overlay (background) --- */
 #my-nav {
-    width: 100%;
+    left: -100%;
 }
 
 .overlay {
@@ -90,6 +90,7 @@ p {
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 5;
+    width: 100%;
 }
 
 /* .hm {
