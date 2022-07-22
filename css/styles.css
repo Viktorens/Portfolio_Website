@@ -93,12 +93,6 @@ p {
     width: 100%;
 }
 
-/* .hm {
-    height: 100%;
-    -webkit-backdrop-filter: blur(40px) contrast(60%);
-    backdrop-filter: blur(40px) contrast(60%);
-} */
-
 /* Position the content inside the overlay */
 .overlay-content {
     position: relative;
