@@ -5,15 +5,15 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <meta name="title" content="Victor Greavu Photography">
+        <meta name="title" content="Victor Greavu">
         <meta name="description" content="Victor's personal website">
-        <meta name="keywords" content="Programming, Photography, Design">
+        <meta name="keywords" content="programming, photography, design">
         <meta name="robots" content="index, follow">
         <meta name="language" content="Romanian">
         <meta name="author" content="Victor Greavu">
         <meta name="designer" content="Victor Greavu">
         <meta name="copyright" content="Victor Greavu" />
-        <title>Victor Greavu Photography</title>
+        <title>Victor Greavu</title>
         <link rel="icon" type="image/png" href="img/favicon.png" />
         <link
             href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -32,8 +32,8 @@
             <div class="overlay-content">
                 <h4>Meniu</h4>
                 <a href="#despre-mine" onclick="closeNav(); enableScrolling()">Despre mine</a>
-                <a href="#portofoliu" onclick="closeNav(); enableScrolling()">Portofoliu</a>
-                <!-- <a href="#proiecte" onclick="closeNav(); enableScrolling()">Proiecte</a> -->
+                <a href="#poze" onclick="closeNav(); enableScrolling()">Poze</a>
+                <a href="#design" onclick="closeNav(); enableScrolling()">Design</a>
                 <a href="#contact" onclick="closeNav(); enableScrolling()">Contact</a>
             </div>
         </div>
@@ -62,7 +62,7 @@
             <div id="banner-title" class="banner">
                 <div class="title-container">
                     <div id="title-box" class="title-box">
-                        <h1 class="title">Victor Greavu Photography</h1>
+                        <h1 class="title">Victor Greavu</h1>
                     </div>
                 </div>
             </div>
@@ -97,11 +97,11 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Portfolio -->
+                    <!-- Poze -->
                 </section>
-                <section class="portofolio">
-                    <div id="portofoliu" class="portofolio-title">
-                        <h3>Portofoliu</h3>
+                <section class="poze">
+                    <div id="poze" class="poze-title">
+                        <h3>Poze</h3>
                     </div>
                     <div class="row margin-bottom">
                         <div class="column image-background-left">
@@ -160,16 +160,35 @@
                         </div>
                     </div>
                 </section>
-                <!-- TODO -->
-                <!-- <section class="projects">
-                <div id="proiecte" class="projects-title">
-                    <h3>Proiecte</h3>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac felis ut mauris molestie sollicitudin. Suspendisse eget ex cursus, iaculis nunc ac, fringilla mi. Nam fringilla purus et bibendum cursus. Etiam rhoncus at metus sit amet
-                    laoreet. Integer at tortor sit amet quam faucibus consequat in eget velit. Nulla hendrerit eu ligula at blandit. Sed consequat aliquet nisl eu dignissim. Sed laoreet et nulla ut consequat. Nulla mollis fermentum massa ut gravida. Sed
-                    diam dolor, lobortis a interdum a, sollicitudin quis elit. Morbi porttitor ornare iaculis. Praesent tempor elementum ante non pretium. Vivamus sagittis non massa non molestie. Suspendisse quis ligula posuere, porttitor mauris fermentum,
-                    tincidunt felis. Ut non placerat purus. </p>
-            </section> -->
+                <!-- Design -->
+                <section class="design">
+                    <div id="design" class="design-title">
+                        <h3>Design</h3>
+                    </div>
+
+                    <div class="design-content">
+                        <a class="design-link" href="https://victorgreavu.pixieset.com/afise-flyere/"><i
+                                class="bi bi-arrow-right-short"></i> Afișe|Flyere
+                        </a>
+                        <br>
+                        <a class="design-link" href="https://victorgreavu.pixieset.com/carti-vizita/"><i
+                                class="bi bi-arrow-right-short"></i> Cărți de vizită
+                        </a>
+                        <br>
+                        <div class="ui-ux-dropdown">
+                            <button onclick="openDropdownMenu(), changingDropdownIcon(this)"
+                                class="bi bi-caret-down-fill dropbtn" id="dropbtn"> UI|UX</button>
+                            <div id="ui-ux-dropdown" class="ui-ux-dropdown-content">
+                                <a href="https://xd.adobe.com/view/1629f924-1792-4eaf-a5fc-9c48f1d40f8b-437a/"
+                                    target="_blank">Site-ul Bisericii de Ziua a Șaptea „Speranța” din Cluj-Napoca |
+                                    Desktop</a>
+                                <a href="https://xd.adobe.com/view/e36e13f8-eb2d-41fd-8f3c-bb125ad3c09b-b63d/"
+                                    target="_blank">Site-ul Bisericii de Ziua a Șaptea „Speranța” din Cluj-Napoca |
+                                    Mobile</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <!-- Contact -->
                 <section class="contact">
                     <div id="contact" class="contact-title">
@@ -198,9 +217,9 @@
                             </div>
                             <span>Messenger</span>
                         </a>
-                        <a class="button" href="mailto: viktorens10mc@gmail.com" target="_blank">
-                            <div class="icon icon-email"><i class="bi bi-envelope"></i></div>
-                            <span>Email</span>
+                        <a class="button" href="https://github.com/Viktorens" target="_blank">
+                            <div class="icon icon-github"><i class="bi bi-github"></i></div>
+                            <span>Github</span>
                         </a>
                     </div>
                     <!-- Copyright -->

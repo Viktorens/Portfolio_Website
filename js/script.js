@@ -7,6 +7,33 @@ function openInNewTab(url) {
     window.open(url, '_blank').focus();
 }
 
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function openDropdownMenu() {
+    document.getElementById("ui-ux-dropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("ui-ux-dropdown-content");
+        var icon = document.getElementById("dropbtn");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                changingDropdownIcon(icon);
+            }
+        }
+    }
+}
+
+// Function to toggle the plus menu into minus
+function changingDropdownIcon(x) {
+    x.classList.toggle("bi-caret-up-fill");
+}
+
 /**
  * Menu Overlay - Animations
  */
