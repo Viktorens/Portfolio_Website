@@ -7,6 +7,10 @@ function openInNewTab(url) {
     window.open(url, '_blank').focus();
 }
 
+/**
+ * Design Dropdown
+ */
+
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function openDropdownMenu() {
