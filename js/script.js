@@ -29,7 +29,7 @@ window.onclick = function (event) {
     }
 }
 
-// Function to toggle the plus menu into minus
+// Function to update dropdown icon
 function changingDropdownIcon(x) {
     x.classList.toggle("bi-caret-up-fill");
 }
