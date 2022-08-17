@@ -308,7 +308,7 @@ p {
 }
 
 .about-title,
-.poze-title,
+.photography-title,
 .design-title,
 .contact-title {
     display: flex;
@@ -317,7 +317,7 @@ p {
 }
 
 .about-title h3,
-.poze-title h3,
+.photography-title h3,
 .projects-title h3,
 .design-title h3,
 .contact-title h3 {
@@ -337,7 +337,7 @@ p {
 }
 
 .about,
-.poze,
+.photography,
 .design,
 .contact {
     margin: 50px 0;
@@ -397,12 +397,9 @@ p {
     word-break: keep-all;
     font-weight: bold;
     font-size: 45px;
-
 }
 
-/* Poze Section */
-
-
+/* photography Section */
 .photography-category-container {
     position: relative;
     text-align: center;
