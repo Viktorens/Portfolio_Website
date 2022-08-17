@@ -16,6 +16,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.row {
+    margin: 0;
+}
+
 a:hover {
     text-decoration: none;
     color: var(--text-primary-color);
