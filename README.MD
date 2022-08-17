@@ -40,6 +40,6 @@ The ```backdrop-filter``` CSS property is not yet supported in Firefox. This mea
 
 On Firefox mobile you can access the configuration tab only if using the beta version of the app. And like the Chromium version, some icons will be off centered on the mobile version of the browser.
 
-###### Safari
+###### Safari and Safari on iOS
 
-There shouldn't be any problems when accessing this webpage from any IOS or macOS device
+There shouldn't be any problems when accessing this webpage from any iOS or macOS device besides the ```scroll-behavior``` CSS property which is not supported by Safary < 15.4 and Safari on iOS < 15.4. This means that when using an older version, the scrolling won't be smooth.
