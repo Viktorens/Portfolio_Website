@@ -30,9 +30,9 @@
             <a href="javascript:void(0)" class="close-btn" onclick="closeNav(); enableScrolling()">&times;</a>
             <!-- Overlay content -->
             <div class="overlay-content">
-                <h4>Meniu</h4>
+                <h4>meniu</h4>
                 <a href="#despre-mine" onclick="closeNav(); enableScrolling()">Despre mine</a>
-                <a href="#poze" onclick="closeNav(); enableScrolling()">Poze</a>
+                <a href="#poze" onclick="closeNav(); enableScrolling()">Fotografie</a>
                 <a href="#design" onclick="closeNav(); enableScrolling()">Design</a>
                 <a href="#contact" onclick="closeNav(); enableScrolling()">Contact</a>
             </div>
@@ -68,11 +68,12 @@
             </div>
             <!-- Sections -->
             <section class="all-sections">
+                <br>
                 <div class="line"></div>
                 <!-- About -->
                 <section class="about">
                     <div id="despre-mine" class="about-title">
-                        <h3>Despre mine</h3>
+                        <h3>despre mine</h3>
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
@@ -97,84 +98,51 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Poze -->
                 </section>
+                <!-- Poze -->
                 <section class="poze">
                     <div id="poze" class="poze-title">
-                        <h3>Poze</h3>
+                        <h3>fotografie</h3>
                     </div>
-                    <div class="row margin-bottom">
-                        <div class="column image-background-left">
-                            <a href="https://victorgreavu.pixieset.com/casual/">
-                                <img class="image-left" src="img/casual.jpg" alt="casual">
-                            </a>
-                        </div>
-                        <div class="column">
-                            <div class="rectangle">
-                                <div class="category-right"
-                                    onclick="window.open('https://victorgreavu.pixieset.com/casual/', '_self')">
-                                    <a class="category-link" href="https://victorgreavu.pixieset.com/casual/">
-                                        <div class="category-text underline-magical">CASUAL</div>
-                                    </a>
-                                    <div class="icon"><i class="bi bi-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="photography-category-container">
+                        <a href="https://victorgreavu.pixieset.com/casual/" target="_blank"
+                            class="photography-category-text">casual</a>
+                        <a href="https://victorgreavu.pixieset.com/casual/" target="_blank">
+                            <img class="backgroundImage" src="img/casual.jpg" alt="casual">
+                        </a>
                     </div>
                     <br>
-                    <div class="row margin-middle">
-                        <div class="column">
-                            <div class="rectangle">
-                                <div class="category-left"
-                                    onclick="window.open('https://victorgreavu.pixieset.com/events/', '_self')">
-                                    <a class="category-link" href="https://victorgreavu.pixieset.com/events/">
-                                        <div class="category-text underline-magical">EVENIMENTE</div>
-                                    </a>
-                                    <div class="icon"><i class="bi bi-arrow-right"></i></div>
-                                </div>
-                            </div>
+                    <div class="photography-category-container">
+                        <div id="photography-category-box" class="photography-category-box">
+                            <a href="https://victorgreavu.pixieset.com/events/" target="_blank"
+                                class="photography-category-text">evenimente</a>
                         </div>
-                        <div class="column image-background-right">
-                            <a href="https://victorgreavu.pixieset.com/events/">
-                                <img class="image-right" src="img/events.jpg" alt="events">
-                            </a>
-                        </div>
+                        <a href="https://victorgreavu.pixieset.com/events/" target="_blank">
+                            <img class="backgroundImage" src="img/events.jpg" alt="event">
+                        </a>
                     </div>
-                    <div class="row margin-top">
-                        <div class="column image-background-left">
-                            <a href="https://victorgreavu.pixieset.com/nature/">
-                                <img class="image-left" src="img/nature.jpg" alt="nature">
-                            </a>
-
-                        </div>
-                        <div class="column">
-                            <div class="rectangle">
-                                <div class="category-right"
-                                    onclick="window.open('https://victorgreavu.pixieset.com/nature/', '_self')">
-                                    <a class="category-link" href="https://victorgreavu.pixieset.com/nature/">
-                                        <div class="category-text underline-magical">NATURĂ</div>
-                                    </a>
-                                    <div class="icon"><i class="bi bi-arrow-right"></i></div>
-                                </div>
-                            </div>
-                        </div>
+                    <br>
+                    <div class="photography-category-container">
+                        <a href="https://victorgreavu.pixieset.com/nature/" target="_blank"
+                            class="photography-category-text">natură</a>
+                        <a href="https://victorgreavu.pixieset.com/nature/" target="_blank">
+                            <img class="backgroundImage" src="img/nature.jpg" alt="nature">
+                        </a>
                     </div>
                 </section>
                 <!-- Design -->
                 <section class="design">
                     <div id="design" class="design-title">
-                        <h3>Design</h3>
+                        <h3>design</h3>
                     </div>
 
                     <div class="design-content">
                         <a class="design-link" href="https://victorgreavu.pixieset.com/afise-flyere/"><i
                                 class="bi bi-arrow-right-short"></i> Afișe|Flyere
                         </a>
-                        <br>
                         <a class="design-link" href="https://victorgreavu.pixieset.com/carti-vizita/"><i
                                 class="bi bi-arrow-right-short"></i> Cărți de vizită
                         </a>
-                        <br>
                         <div class="ui-ux-dropdown">
                             <button onclick="openDropdownMenu(), changingDropdownIcon(this)"
                                 class="bi bi-caret-down-fill dropbtn" id="dropbtn"> UI|UX</button>
@@ -192,12 +160,13 @@
                 <!-- Contact -->
                 <section class="contact">
                     <div id="contact" class="contact-title">
-                        <h3>Contact</h3>
+                        <h3>contact</h3>
                     </div>
                     <p>Fie că este vorba despre un eveniment important din viața ta sau doar o simplă plimbare în
                         natură, păstrează aceste amintiri și experiențe unice cu tine.</p>
                     <a class="contact-links" href="mailto: viktorens10mc@gmail.com">viktorens10mc@gmail.com</a>
                     <a class="contact-links" href="tel: +40743188886">+40 743 188 886</a>
+                    <br>
                 </section>
             </section>
             <!-- Footer -->
