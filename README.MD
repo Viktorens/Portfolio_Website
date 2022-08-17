@@ -24,7 +24,7 @@ I try to keep all it's features available for all browsers but unfortunately it'
 
 ###### Chromium Engine
 
-Everything runs smoothly on the desktop. On the mobile version some icons may be off centered.
+Everything runs smoothly on the desktop. If using the mobile version, some icons may be off centered.
 
 ###### Firefox
 
@@ -32,11 +32,11 @@ The ```backdrop-filter``` CSS property is not yet supported in Firefox. This mea
 
 - Open a new Firefox tab and type ```about:config``` in the address bar
 
-- Type ```layout.css.backdrop-filter.enabled``` in the search bar and set it from to ```true```
+- Type ```layout.css.backdrop-filter.enabled``` in the search bar and set it to ```true```
 
 - Type ```gfx.webrender.all``` in the search bar and set it to ```true``` as well
 
-On Firefox mobile you can access the configuration tab only if using the beta version of the app. And like the Chromium version, some icons will be off centered on the mobile version of the  browser.
+On Firefox mobile you can access the configuration tab only if using the beta version of the app. And like the Chromium version, some icons will be off centered on the mobile version of the browser.
 
 ###### Safari
 
