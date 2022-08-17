@@ -18,7 +18,7 @@ This is one of my personal project that I started in the summer of 2021. It's co
 
 - It features light and dark mode support. It changes without refreshing the page by using event listeneres.
 
-- Each photo gallery (photography categories and desings) is a gallery in the [Pixieset](https://pixieset.com/) website.
+- Each photo gallery (photography categories and desings) is a gallery on the [Pixieset](https://pixieset.com/) website.
 
 ### Supported browsers
 
