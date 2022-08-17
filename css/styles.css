@@ -176,6 +176,7 @@ p {
     font-weight: 300;
     cursor: default;
     border-radius: 30px;
+    width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 0;
     letter-spacing: 10px;
@@ -333,6 +334,7 @@ p {
     cursor: default;
     background-image: linear-gradient(120deg, var(--dark-color) 0%, var(--light-color) 100%);
     border-radius: 50px;
+    width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 30px;
     letter-spacing: 3px;
@@ -434,9 +436,14 @@ p {
 }
 
 .backgroundImage:hover {
-    filter: blur(20px);
-    scale: 1.1;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    transform: scale(1.1);
     transition: .5s;
+
 }
 
 /* Design Section */
