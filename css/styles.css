@@ -157,6 +157,7 @@ p {
     right: 0;
     z-index: -1;
     background: rgba(0, 0, 0, 0)url(../img/backgroundPicture.jpg);
+    background-position: center center;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
