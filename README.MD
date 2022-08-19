@@ -22,11 +22,11 @@ This is one of my personal project that I started in the summer of 2021. It's co
 
 ### Supported browsers
 
-I try to keep all it's features available for all browsers but unfortunately it's not still possible
+It tries to keep all it's features available for all browsers.
 
 ###### Chromium Engine
 
-Everything runs smoothly on the desktop. If using the mobile version, some icons may be off centered.
+Everything runs smoothly on desktop. If using the mobile version, some icons may be off centered.
 
 ###### Firefox
 
