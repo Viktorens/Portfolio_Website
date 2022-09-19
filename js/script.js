@@ -14,7 +14,7 @@ function openInNewTab(url) {
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function openDropdownMenu() {
-    document.getElementById("ui-ux-dropdown").classList.toggle("show");
+    document.getElementById("ui-ux-dropdown").classList.toggle("show-dropdown");
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -25,8 +25,8 @@ window.onclick = function (event) {
         var i;
         for (i = 0; i < dropdowns.length; i++) {
             var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
+            if (openDropdown.classList.contains('show-dropdown')) {
+                openDropdown.classList.remove('show-dropdown');
                 changingDropdownIcon(icon);
             }
         }
@@ -177,6 +177,28 @@ function handleImageBlur() {
         document.getElementById("blurred-img").style.transform = `scale(${ 1.1 })`;
 }
 document.addEventListener("scroll", handleImageBlur);
+
+
+/**
+ * Elements fade in/out on scroll
+ */
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-elements-fade');
+        } else {
+            entry.target.classList.remove('show-elements-fade');
+        }
+    });
+});
+const hiddenElementsFade = document.querySelectorAll('.hide-elements-fade')
+const hiddenMenuElementsFade = document.querySelectorAll('.hide-menu-elements-fade');
+const hiddenPhotoElementsFade = document.querySelectorAll('.hide-photo-elements-fade');
+hiddenElementsFade.forEach((element) => observer.observe(element));
+hiddenMenuElementsFade.forEach((element) => observer.observe(element));
+hiddenPhotoElementsFade.forEach((element) => observer.observe(element));
 
 
 /**

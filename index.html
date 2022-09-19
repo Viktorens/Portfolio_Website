@@ -31,10 +31,15 @@
             <!-- Overlay content -->
             <div class="overlay-content">
                 <h4>meniu</h4>
-                <a href="#despre-mine" onclick="closeNav(); enableScrolling()">Despre mine</a>
-                <a href="#poze" onclick="closeNav(); enableScrolling()">Fotografie</a>
-                <a href="#design" onclick="closeNav(); enableScrolling()">Design</a>
-                <a href="#contact" onclick="closeNav(); enableScrolling()">Contact</a>
+                <a class="menu-button-fade-1 hide-menu-elements-fade" href="#despre-mine"
+                    onclick="closeNav(); enableScrolling()">Despre
+                    mine</a>
+                <a class="menu-button-fade-2 hide-menu-elements-fade" href="#photography"
+                    onclick="closeNav(); enableScrolling()">Fotografie</a>
+                <a class="menu-button-fade-3 hide-menu-elements-fade" href="#design"
+                    onclick="closeNav(); enableScrolling()">Design</a>
+                <a class="menu-button-fade-4 hide-menu-elements-fade" href="#contact"
+                    onclick="closeNav(); enableScrolling()">Contact</a>
             </div>
         </div>
         <!-- Menu Bar -->
@@ -61,7 +66,7 @@
             <!-- Title -->
             <div id="banner-title" class="banner">
                 <div class="title-container">
-                    <div id="title-box" class="title-box">
+                    <div id="title-box" class="title-box hide-elements-fade">
                         <h1 class="title">Victor Greavu</h1>
                     </div>
                 </div>
@@ -77,11 +82,12 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-12">
-                            <img class="image-about" src="./img/about.jpg" alt="about me">
+                            <img class="image-about hide-elements-fade" src="./img/about.jpg" alt="about me">
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <p class="about-name">Victor Greavu</p>
-                            <p>Pentru mine fotografia este mai mult decât artă. Cu ajutorul ei, o clipă poate dura o
+                            <p class="about-name hide-elements-fade">Victor Greavu</p>
+                            <p class="hide-elements-fade">Pentru mine fotografia este mai mult decât artă. Cu ajutorul
+                                ei, o clipă poate dura o
                                 veșnicie iar prin aceasta descoperi cât de bogată este realitatea. Dintotdeauna mi-a
                                 plăcut să imortalizez emoțiile celor din jur și să surprind
                                 bucuria exprimată într-un mod cât mai natural.
@@ -105,26 +111,28 @@
                         <h3>fotografie</h3>
                     </div>
                     <div class="photography-category-container">
-                        <a href="https://victorgreavu.pixieset.com/casual/" class="photography-category-text">casual</a>
+                        <a href="https://victorgreavu.pixieset.com/casual/"
+                            class="photography-category-text hide-photo-elements-fade">casual</a>
                         <a href="https://victorgreavu.pixieset.com/casual/">
-                            <img class="backgroundImage" src="./img/casual.jpg" alt="casual">
+                            <img class="backgroundImage hide-photo-elements-fade" src="./img/casual.jpg" alt="casual">
                         </a>
                     </div>
                     <br>
                     <div class="photography-category-container">
                         <div id="photography-category-box" class="photography-category-box">
                             <a href="https://victorgreavu.pixieset.com/events/"
-                                class="photography-category-text">evenimente</a>
+                                class="photography-category-text hide-photo-elements-fade">evenimente</a>
                         </div>
                         <a href="https://victorgreavu.pixieset.com/events/">
-                            <img class="backgroundImage" src="./img/events.jpg" alt="event">
+                            <img class="backgroundImage hide-photo-elements-fade" src="./img/events.jpg" alt="event">
                         </a>
                     </div>
                     <br>
                     <div class="photography-category-container">
-                        <a href="https://victorgreavu.pixieset.com/nature/" class="photography-category-text">natură</a>
+                        <a href="https://victorgreavu.pixieset.com/nature/"
+                            class="photography-category-text hide-photo-elements-fade">natură</a>
                         <a href="https://victorgreavu.pixieset.com/nature/">
-                            <img class="backgroundImage" src="./img/nature.jpg" alt="nature">
+                            <img class="backgroundImage hide-photo-elements-fade" src="./img/nature.jpg" alt="nature">
                         </a>
                     </div>
                 </section>
@@ -135,13 +143,15 @@
                     </div>
 
                     <div class="design-content">
-                        <a class="design-link" href="https://victorgreavu.pixieset.com/afise-flyere/"><i
+                        <a class="design-link button-fade-1 hide-elements-fade"
+                            href="https://victorgreavu.pixieset.com/afise-flyere/"><i
                                 class="bi bi-arrow-right-short"></i> Afișe|Flyere
                         </a>
-                        <a class="design-link" href="https://victorgreavu.pixieset.com/carti-vizita/"><i
+                        <a class="design-link button-fade-2 hide-elements-fade"
+                            href="https://victorgreavu.pixieset.com/carti-vizita/"><i
                                 class="bi bi-arrow-right-short"></i> Cărți de vizită
                         </a>
-                        <div class="ui-ux-dropdown">
+                        <div class="ui-ux-dropdown button-fade-3 hide-elements-fade">
                             <button onclick="openDropdownMenu(), changingDropdownIcon(this)"
                                 class="bi bi-caret-down-fill dropbtn" id="dropbtn"> UI|UX</button>
                             <div id="ui-ux-dropdown" class="ui-ux-dropdown-content">
@@ -160,10 +170,12 @@
                     <div id="contact" class="contact-title">
                         <h3>contact</h3>
                     </div>
-                    <p>Fie că este vorba despre un eveniment important din viața ta sau doar o simplă plimbare în
+                    <p class="hide-elements-fade">Fie că este vorba despre un eveniment important din viața ta sau doar
+                        o simplă plimbare în
                         natură, păstrează aceste amintiri și experiențe unice cu tine.</p>
-                    <a class="contact-links" href="mailto: viktorens10mc@gmail.com">viktorens10mc@gmail.com</a>
-                    <a class="contact-links" href="tel: +40743188886">+40 743 188 886</a>
+                    <a class="contact-links hide-elements-fade"
+                        href="mailto: viktorens10mc@gmail.com">viktorens10mc@gmail.com</a>
+                    <a class="contact-links hide-elements-fade" href="tel: +40743188886">+40 743 188 886</a>
                     <br>
                 </section>
             </section>
@@ -172,25 +184,28 @@
                 <div class="footer-bg">
                     <!-- Social Media -->
                     <div class="wrapper">
-                        <a class="button" href="https://www.instagram.com/victor.greavu" target="_blank">
+                        <a class="button button-fade-1 hide-elements-fade"
+                            href="https://www.instagram.com/victor.greavu" target="_blank">
                             <div class="icon icon-instagram">
                                 <h3><i class="bi bi-instagram"></i></h3>
                             </div>
                             <span>Instagram</span>
                         </a>
-                        <a class="button" href=" http://m.me/victor.greavu.10" target="_blank">
+                        <a class="button button-fade-2 hide-elements-fade" href=" http://m.me/victor.greavu.10"
+                            target="_blank">
                             <div class="icon icon-messenger">
                                 <h3><i class="bi bi-messenger"></i></h3>
                             </div>
                             <span>Messenger</span>
                         </a>
-                        <a class="button" href="https://github.com/Viktorens" target="_blank">
+                        <a class="button button-fade-3 hide-elements-fade" href="https://github.com/Viktorens"
+                            target="_blank">
                             <div class="icon icon-github"><i class="bi bi-github"></i></div>
                             <span>Github</span>
                         </a>
                     </div>
                     <!-- Copyright -->
-                    <div class="copyright">
+                    <div class="copyright hide-elements-fade">
                         <a class="copyright" id="copyright" href="https://goo.gl/maps/1k9WAPEfpTyetgwL8"
                             target="_blank"></a>
                     </div>

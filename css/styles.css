@@ -29,6 +29,65 @@ p {
     margin: 0;
 }
 
+/* --- Fade In/Out classes --- */
+
+.hide-elements-fade {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(20%);
+    transition: all 1s;
+}
+
+.hide-menu-elements-fade {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s !important;
+}
+
+.hide-photo-elements-fade {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.show-elements-fade {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+.backgroundImage:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.backgroundImage:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.button-fade-2 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-3 {
+    transition-delay: 400ms !important;
+}
+
+.menu-button-fade-2 {
+    transition-delay: 200ms !important;
+}
+
+.menu-button-fade-3 {
+    transition-delay: 400ms !important;
+}
+
+.menu-button-fade-4 {
+    transition-delay: 600ms !important;
+}
+
+/* --- Arrow --- */
+
 .arrow {
     opacity: 0;
     position: absolute;
@@ -419,7 +478,7 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: .5s;
+    transition: 2s;
 }
 
 .backgroundImage:hover {
@@ -429,7 +488,7 @@ p {
     -ms-filter: blur(5px);
     filter: blur(5px);
     transform: scale(1.1);
-    transition: .5s;
+    transition: 5s;
 }
 
 /* Design Section */
@@ -498,7 +557,7 @@ p {
     border-radius: 20px;
 }
 
-.show {
+.show-dropdown {
     display: flex;
     flex-direction: column;
     opacity: 1;
@@ -694,7 +753,9 @@ footer {
     cursor: pointer;
     text-decoration: var(--text-primary-color);
     color: var(--text-primary-color);
-    padding: 0 0 1% 1%;
+    padding-bottom: 1%;
+    max-width: fit-content;
+    margin: auto;
 }
 
 .copyright:hover {
@@ -745,6 +806,12 @@ i.bi.bi-chevron-bar-up {
 }
 
 /* --- Media Queries ---- */
+
+@media (prefers-reduced-motion) {
+    .hide-elements-fade {
+        transition: none;
+    }
+}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
