@@ -8,35 +8,40 @@ function openInNewTab(url) {
 }
 
 /**
- * Design Dropdown
+ * Design Pattern Animation
  */
+const uniqueRand = (min, max, prev) => {
+    let next = prev;
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function openDropdownMenu() {
-    document.getElementById("ui-ux-dropdown").classList.toggle("show-dropdown");
+    while (prev === next) next = rand(min, max);
+
+    return next;
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("ui-ux-dropdown-content");
-        var icon = document.getElementById("dropbtn");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show-dropdown')) {
-                openDropdown.classList.remove('show-dropdown');
-                changingDropdownIcon(icon);
-            }
-        }
-    }
-}
+const designWrapper = document.getElementById("design-wrapper");
 
-// Function to update dropdown icon
-function changingDropdownIcon(x) {
-    x.classList.toggle("bi-caret-up-fill");
-}
+const rand = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
+const combinations = [
+    { configuration: 1, roundness: 1 },
+    { configuration: 1, roundness: 2 },
+    { configuration: 1, roundness: 4 },
+    { configuration: 2, roundness: 2 },
+    { configuration: 2, roundness: 3 },
+    { configuration: 3, roundness: 3 }
+];
+
+let prev = 0;
+
+setInterval(() => {
+    const index = uniqueRand(0, combinations.length - 1, prev),
+        combination = combinations[index];
+
+    designWrapper.dataset.configuration = combination.configuration;
+    designWrapper.dataset.roundness = combination.roundness;
+
+    prev = index;
+}, 3000);
 
 /**
  * Menu Overlay - Animations
@@ -166,15 +171,12 @@ document.addEventListener("scroll", handleNavbar);
 function handleImageBlur() {
     var windowScroll = window.pageYOffset;
     var blurAmount = (windowScroll / 300.0) * 10;
-    var scaleAmount = ((windowScroll / 300.0) / 100 + 1) * 1.05;
-
+    var scaleAmount = ((windowScroll * 1.5 / 300.0) / 100 + 1);
     document.getElementById("blurred-img").style.filter = `blur(${ blurAmount }px)`;
     document.getElementById("blurred-img").style.transform = `scale(${ scaleAmount })`;
 
     if (blurAmount >= 10)
         document.getElementById("blurred-img").style.filter = `blur(${ 10 }px)`;
-    if (scaleAmount >= 1.1)
-        document.getElementById("blurred-img").style.transform = `scale(${ 1.1 })`;
 }
 document.addEventListener("scroll", handleImageBlur);
 
@@ -185,7 +187,6 @@ document.addEventListener("scroll", handleImageBlur);
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show-elements-fade');
         } else {
@@ -273,7 +274,14 @@ function readTextFile(file, callback) {
 
 readTextFile("../js/colors.json", function (text) {
     var colors = JSON.parse(text); //parse JSON
-    document.documentElement.style.setProperty('--dark-color', colors[0]);
-    document.documentElement.style.setProperty('--light-color', colors[1]);
+    document.documentElement.style.setProperty('--dark-color', 'rgb(' + parseInt(colors[0][0], 10) + ', ' + parseInt(colors[0][1], 10) + ', ' + parseInt(colors[0][2], 10) + ')');
+    document.documentElement.style.setProperty('--light-color', 'rgb(' + parseInt(colors[6][0], 10) + ', ' + parseInt(colors[6][1], 10) + ', ' + parseInt(colors[6][2], 10) + ')');
+    document.documentElement.style.setProperty('--1-color', 'rgb(' + parseInt(colors[0][0], 10) + ', ' + parseInt(colors[0][1], 10) + ', ' + parseInt(colors[0][2], 10) + ')');
+    document.documentElement.style.setProperty('--2-color', 'rgb(' + parseInt(colors[1][0], 10) + ', ' + parseInt(colors[1][1], 10) + ', ' + parseInt(colors[1][2], 10) + ')');
+    document.documentElement.style.setProperty('--3-color', 'rgb(' + parseInt(colors[2][0], 10) + ', ' + parseInt(colors[2][1], 10) + ', ' + parseInt(colors[2][2], 10) + ')');
+    document.documentElement.style.setProperty('--4-color', 'rgb(' + parseInt(colors[3][0], 10) + ', ' + parseInt(colors[3][1], 10) + ', ' + parseInt(colors[3][2], 10) + ')');
+    document.documentElement.style.setProperty('--5-color', 'rgb(' + parseInt(colors[4][0], 10) + ', ' + parseInt(colors[4][1], 10) + ', ' + parseInt(colors[4][2], 10) + ')');
+    document.documentElement.style.setProperty('--6-color', 'rgb(' + parseInt(colors[5][0], 10) + ', ' + parseInt(colors[5][1], 10) + ', ' + parseInt(colors[5][2], 10) + ')');
+    document.documentElement.style.setProperty('--7-color', 'rgb(' + parseInt(colors[6][0], 10) + ', ' + parseInt(colors[6][1], 10) + ', ' + parseInt(colors[6][2], 10) + ')');
 
 });
