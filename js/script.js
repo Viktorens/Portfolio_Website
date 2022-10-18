@@ -185,6 +185,27 @@ document.addEventListener("scroll", handleImageBlur);
  * Elements fade in/out on scroll
  */
 
+function revealElements() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 25;
+
+        if (revealtop < windowheight - revealpoint) {
+            reveals[i].classList.add('active');
+        }
+        else {
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+window.addEventListener('scroll', revealElements);
+
+// animation for revealing the menu buttons
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -194,12 +215,8 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 });
-const hiddenElementsFade = document.querySelectorAll('.hide-elements-fade')
 const hiddenMenuElementsFade = document.querySelectorAll('.hide-menu-elements-fade');
-const hiddenPhotoElementsFade = document.querySelectorAll('.hide-photo-elements-fade');
-hiddenElementsFade.forEach((element) => observer.observe(element));
 hiddenMenuElementsFade.forEach((element) => observer.observe(element));
-hiddenPhotoElementsFade.forEach((element) => observer.observe(element));
 
 
 /**

@@ -31,11 +31,17 @@ p {
 
 /* --- Fade In/Out classes --- */
 
-.hide-elements-fade {
-    opacity: 0;
+.reveal {
     filter: blur(5px);
-    transform: translateY(20%);
-    transition: all 1s;
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.reveal.active {
+    filter: blur(0);
+    transform: translateY(0%);
+    opacity: 1;
 }
 
 .hide-menu-elements-fade {
@@ -43,12 +49,6 @@ p {
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s !important;
-}
-
-.hide-photo-elements-fade {
-    opacity: 0;
-    filter: blur(5px);
-    transition: all 1s;
 }
 
 .show-elements-fade {
@@ -59,11 +59,11 @@ p {
 }
 
 .backgroundImage:nth-child(2) {
-    transition-delay: 200ms;
+    transition-delay: 400ms;
 }
 
 .backgroundImage:nth-child(3) {
-    transition-delay: 400ms;
+    transition-delay: 800ms;
 }
 
 .button-fade-2 {
@@ -233,13 +233,13 @@ p {
     top: 40%;
     color: var(--text-primary-color);
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 800;
     cursor: default;
     border-radius: 30px;
     width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 0;
-    letter-spacing: 10px;
+    letter-spacing: 3px;
 }
 
 .title-container {
@@ -390,14 +390,14 @@ p {
     padding: 8px 25px;
     color: var(--text-secondary-color);
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 800;
     cursor: default;
     background-image: linear-gradient(120deg, var(--dark-color) 0%, var(--light-color) 100%);
     border-radius: 50px;
     width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 30px;
-    letter-spacing: 3px;
+    letter-spacing: 6px;
     white-space: nowrap;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
 }
@@ -447,8 +447,9 @@ p {
     margin: 40px 0 20px 0;
     line-height: 40px;
     word-break: keep-all;
-    font-weight: bold;
+    font-weight: 800;
     font-size: 45px;
+    letter-spacing: 3px;
 }
 
 /* Photography Section */
@@ -470,7 +471,8 @@ p {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3rem;
-    letter-spacing: 5px;
+    letter-spacing: 8px;
+    font-weight: 200;
     z-index: 1;
 }
 
@@ -515,31 +517,81 @@ p {
 
 /* Shapes Color */
 #design-wrapper>.shape:nth-child(1) {
-    background-color: var(--1-color);
+    background-color: var(--3-color);
+    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(2) {
-    background-color: var(--2-color);
+    background-color: var(--4-color);
+    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(3) {
-    background-color: var(--3-color);
+    background-color: var(--5-color);
+    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(4) {
-    background-color: var(--4-color);
+    background-color: var(--1-color);
+    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(5) {
-    background-color: var(--5-color);
+    background-color: var(--2-color);
+    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(6) {
     background-color: var(--6-color);
+    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(7) {
     background-color: var(--7-color);
+    transition: .5s;
+}
+
+/* Hover effect */
+#design-wrapper>.shape:nth-child(1):hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px var(--text-primary-color);
+    transition: .5s;
+}
+
+#design-wrapper>.shape:nth-child(2):hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px var(--text-primary-color);
+    transition: .5s;
+}
+
+#design-wrapper>.shape:nth-child(3):hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px var(--text-primary-color);
+    transition: .5s;
+}
+
+#design-wrapper>.shape:nth-child(4):hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px var(--text-primary-color);
+    transition: .5s;
+}
+
+#design-wrapper>.shape:nth-child(5):hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px var(--text-primary-color);
+    transition: .5s;
+}
+
+#design-wrapper>.shape:nth-child(6):hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px var(--text-primary-color);
+    transition: .5s;
+}
+
+#design-wrapper>.shape:nth-child(7):hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px var(--text-primary-color);
+    transition: .5s;
 }
 
 /* Configuration 1 */
