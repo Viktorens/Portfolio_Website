@@ -988,33 +988,38 @@ footer {
 }
 
 /* Scroll Up Button */
-.scroll-to-top-btn {
+.scroll-to-top-container {
+    -webkit-backdrop-filter: blur(10px) contrast(90%);
+    backdrop-filter: blur(10px) contrast(90%);
     display: inline-block;
     position: fixed;
+    border: none;
+    height: 60px;
+    width: 60px;
+    z-index: 100;
+    bottom: 40px;
+    right: 15px;
+    border-radius: 50px;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all .5s ease;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-to-top-btn {
+    display: inline-block;
     border: none;
     color: var(--text-primary-color);
     height: 60px;
     width: 60px;
-    margin: 0 5px;
     overflow: hidden;
-    background: var(--background-secondary-color);
+    background: var(--background-primary-color-RGBA);
     border-radius: 50px;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     text-align: center;
-    bottom: 50px;
-    right: 5%;
-    z-index: 100;
-    opacity: 0;
-    transform: translateY(150px);
     transition: all .5s ease;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
-}
-
-.scroll-to-top-btn:hover {
-    background: var(--background-primary-color);
-    opacity: 1;
 }
 
 i.bi.bi-chevron-bar-up {
@@ -1022,7 +1027,7 @@ i.bi.bi-chevron-bar-up {
 }
 
 .show-btn {
-    opacity: 0.75;
+    opacity: 1;
     transform: translateY(0px);
 }
 

@@ -50,7 +50,7 @@ setInterval(() => {
 // Opens the overlay
 function openNav() {
     var menuButton = document.getElementById("navbar");
-    var scrollToTopButton = document.getElementById("scroll-to-top-btn");
+    var scrollToTopButton = document.getElementById("scroll-to-top-container");
 
     document.getElementById("my-nav").style.left = "0%";
     menuButton.style.top = "-100px";
@@ -60,7 +60,7 @@ function openNav() {
 // Closes the overlay
 function closeNav() {
     var menuButton = document.getElementById("navbar");
-    var scrollToTopButton = document.getElementById("scroll-to-top-btn");
+    var scrollToTopButton = document.getElementById("scroll-to-top-container");
 
     document.getElementById("my-nav").style.left = "-100%";
     menuButton.style.top = "0";
@@ -119,7 +119,7 @@ function enableScrolling() {
  * Scroll Up Button
  */
 
-var scrollToTopBtn = document.querySelector(".scroll-to-top-btn");
+var scrollToTopBtn = document.querySelector(".scroll-to-top-container");
 var rootElement = document.documentElement;
 
 function handleScroll() {
