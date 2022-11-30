@@ -231,7 +231,7 @@ function setColorScheme(scheme) {
             document.documentElement.style.setProperty('--background-primary-color-RGBA', 'rgba(0, 0, 0, 0.5)');
             document.documentElement.style.setProperty('--background-secondary-color', 'black');
             document.documentElement.style.setProperty('--text-primary-color', 'whitesmoke');
-            document.documentElement.style.setProperty('--text-secondary-color', 'whitesmoke'); // Sections Title Color
+            document.documentElement.style.setProperty('--text-secondary-color', '#252525'); // Sections Title Color
             document.documentElement.style.setProperty('--panel-primary-color', '#161616');
             break;
         case 'light':
@@ -240,7 +240,7 @@ function setColorScheme(scheme) {
             document.documentElement.style.setProperty('--background-primary-color-RGBA', 'rgba(255, 255, 255, 0.5)');
             document.documentElement.style.setProperty('--background-secondary-color', '#f0f0f0');
             document.documentElement.style.setProperty('--text-primary-color', '#252525');
-            document.documentElement.style.setProperty('--text-secondary-color', 'whitesmoke'); // Sections Title Color
+            document.documentElement.style.setProperty('--text-secondary-color', '#252525'); // Sections Title Color
             document.documentElement.style.setProperty('--panel-primary-color', 'white');
             break;
         default:
