@@ -144,8 +144,8 @@ p {
 
 .overlay {
     background: var(--background-primary-color-RGBA);
-    -webkit-backdrop-filter: blur(40px) contrast(90%) brightness(150%);
-    backdrop-filter: blur(40px) contrast(90%) brightness(150%);
+    -webkit-backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
     height: 100%;
     position: fixed;
     left: 0;
@@ -389,7 +389,7 @@ p {
 .contact-title h3 {
     text-align: center;
     padding: 8px 25px;
-    color: var(--text-secondary-color);
+    color: var(--text-primary-color);
     font-size: 25px;
     font-weight: 800;
     cursor: default;
@@ -808,7 +808,7 @@ p {
     cursor: pointer;
     text-decoration: var(--text-primary-color);
     color: var(--text-primary-color);
-    padding-top: 20px;
+    padding-bottom: 20px;
     justify-content: center;
     display: flex;
     max-width: 0%;
