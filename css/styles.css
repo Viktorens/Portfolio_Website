@@ -389,7 +389,8 @@ p {
 .contact-title h3 {
     text-align: center;
     padding: 8px 25px;
-    color: var(--text-primary-color);
+    /* color: var(--text-primary-color); */
+    color: whitesmoke;
     font-size: 25px;
     font-weight: 800;
     cursor: default;
