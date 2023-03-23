@@ -190,24 +190,19 @@ p {
     text-decoration: none;
     color: var(--text-primary-color);
     display: block;
-    transition: .4s !important
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover,
-.overlay a:focus {
-    text-shadow: 0px 0px 20px var(--text-primary-color);
 }
 
 
 /* Position the close button (top right corner) */
 .overlay .close-btn {
     position: absolute;
+    transition: .4s;
 }
 
 .overlay .close-btn:hover {
     color: red;
     text-shadow: 0px 0px 20px red;
+    transition: .4s;
 }
 
 /* Background Image */
