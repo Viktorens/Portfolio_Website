@@ -229,7 +229,8 @@ p {
     padding: 0px 20px;
     text-align: center;
     top: 40%;
-    color: var(--text-primary-color);
+    /* color: var(--text-primary-color); */
+    color: #1d1d1d;
     font-size: 3.5vmax;
     font-weight: 800;
     cursor: default;
@@ -238,7 +239,8 @@ p {
     width: fit-content;
     margin-bottom: 0;
     letter-spacing: 3px;
-    text-shadow: 0px 0px 20px var(--text-primary-color);
+    /* text-shadow: 0px 0px 20px var(--text-primary-color); */
+    text-shadow: 0px 0px 10px #1d1d1d;
     white-space: nowrap;
 }
 
@@ -469,11 +471,11 @@ p {
     }
     
     50% {
-        background-position: 50% 35%;
+        background-position: 50% 55%;
     }
 
     50.0001% { /* -- View 2 -- */
-        background-position: 50% 35%;
+        background-position: 50% 55%;
     }
     
     100% {
