@@ -848,7 +848,7 @@ p {
 }
 
 /* --- Footer --- */
-footer {
+.footer {
     background-color: transparent;
     text-align: initial;
     color: var(--text-primary-color);
