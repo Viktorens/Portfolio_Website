@@ -867,7 +867,7 @@ footer {
 }
 
 /* --- Social Media Buttons --- */
-.social-media-wrapper {
+.social-media {
     display: flex;
     place-content: center;
     padding: 25px;
@@ -879,7 +879,7 @@ footer {
     color: var(--text-primary-color);
 }
 
-.social-media-wrapper .button {
+.social-media .button {
     display: inline-block;
     border: none;
     height: 60px;
@@ -894,19 +894,19 @@ footer {
     transition: all 0.3s ease-out;
 }
 
-.social-media-wrapper .button:nth-child(1):hover {
+.social-media .button:nth-child(1):hover {
     width: 225px;
 }
 
-.social-media-wrapper .button:nth-child(2):hover {
+.social-media .button:nth-child(2):hover {
     width: 235px;
 }
 
-.social-media-wrapper .button:nth-child(3):hover {
+.social-media .button:nth-child(3):hover {
     width: 190px;
 }
 
-.social-media-wrapper .button .icon {
+.social-media .button .icon {
     display: inline-block;
     height: 60px;
     width: 60px;
@@ -916,38 +916,38 @@ footer {
     line-height: 60px;
 }
 
-.social-media-wrapper .button:nth-child(1):hover .icon {
+.social-media .button:nth-child(1):hover .icon {
     background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
 
-.social-media-wrapper .button:nth-child(2):hover .icon {
+.social-media .button:nth-child(2):hover .icon {
     background: #0882bd;
 }
 
-.social-media-wrapper .button:nth-child(3):hover .icon {
+.social-media .button:nth-child(3):hover .icon {
     background: var(--background-primary-color);
 }
 
-.social-media-wrapper .button .icon i {
+.social-media .button .icon i {
     font-size: 25px;
     line-height: 2.4em;
 }
 
-.social-media-wrapper .button:hover .icon i {
+.social-media .button:hover .icon i {
     color: var(--text-primary-color);
 }
 
-.social-media-wrapper .button:nth-child(1):hover .icon i,
-.social-media-wrapper .button:nth-child(2):hover .icon i {
+.social-media .button:nth-child(1):hover .icon i,
+.social-media .button:nth-child(2):hover .icon i {
     background: whitesmoke;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.social-media-wrapper .button span {
+.social-media .button span {
     font-size: 25px;
     font-weight: 400;
     line-height: 60px;
@@ -955,15 +955,15 @@ footer {
     transition: all 0.3s ease-out;
 }
 
-.social-media-wrapper .button:nth-child(1) span {
+.social-media .button:nth-child(1) span {
     color: #E1306C;
 }
 
-.social-media-wrapper .button:nth-child(2) span {
+.social-media .button:nth-child(2) span {
     color: #0882bd;
 }
 
-.social-media-wrapper .button:nth-child(3) span {
+.social-media .button:nth-child(3) span {
     color: var(--text-primary-color);
 }
 
@@ -1023,7 +1023,7 @@ footer {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-.scroll-to-top-btn {
+.scroll-to-top {
     display: inline-block;
     border: none;
     color: var(--text-primary-color);
@@ -1048,7 +1048,7 @@ i.bi.bi-chevron-bar-up {
     transform: translateY(0px);
 }
 
-.scroll-to-top-btn:focus {
+.scroll-to-top:focus {
     outline: none;
 }
 
@@ -1100,15 +1100,15 @@ i.bi.bi-chevron-bar-up {
         font-size: 25px;
     }
 
-    .social-media-wrapper .button:nth-child(1):hover {
+    .social-media .button:nth-child(1):hover {
         width: 60px;
     }
 
-    .social-media-wrapper .button:nth-child(2):hover {
+    .social-media .button:nth-child(2):hover {
         width: 60px;
     }
 
-    .social-media-wrapper .button:nth-child(3):hover {
+    .social-media .button:nth-child(3):hover {
         width: 60px;
     }
 
