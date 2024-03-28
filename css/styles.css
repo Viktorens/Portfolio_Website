@@ -213,7 +213,7 @@ p {
     left: 0;
     right: 0;
     z-index: -1;
-    background: rgba(0, 0, 0, 0)url(../img/backgroundPicture.jpg);
+    background: rgba(0, 0, 0, 0)url(../img/backgroundPicture.png);
     background-position: center center;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -229,8 +229,7 @@ p {
     padding: 0px 20px;
     text-align: center;
     top: 40%;
-    /* color: var(--text-primary-color); */
-    color: #1d1d1d;
+    color: var(--text-primary-color);
     font-size: 3.5vmax;
     font-weight: 800;
     cursor: default;
@@ -924,9 +923,7 @@ footer {
 }
 
 .social-media-wrapper .button:nth-child(2):hover .icon {
-    background: -moz-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
-    background: -webkit-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
-    background: linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
+    background: #0882bd;
 }
 
 .social-media-wrapper .button:nth-child(3):hover .icon {
@@ -963,7 +960,7 @@ footer {
 }
 
 .social-media-wrapper .button:nth-child(2) span {
-    color: #4267B2;
+    color: #0882bd;
 }
 
 .social-media-wrapper .button:nth-child(3) span {
@@ -985,18 +982,10 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
-.icon-messenger h3 {
-    background: #0695FF;
-    background: -moz-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
-    background: -webkit-linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
-    background: linear-gradient(45deg, #0695FF 25%, #A334FA 50%, #FF6968 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.icon-linkedin {
+    color: #0882bd;
 }
 
-.icon-messenger i:before,
 .icon-instagram i:before {
     display: inline;
 }

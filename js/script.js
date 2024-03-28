@@ -1,7 +1,7 @@
 /**
  * Copyright Footer
  */
-document.getElementById("copyright").innerHTML = "&copy " + new Date().getFullYear() + " Victor Greavu | Cluj Napoca, România";
+document.getElementById("copyright").innerHTML = "&copy " + new Date().getFullYear() + " Victor Greavu | București, România";
 
 function openInNewTab(url) {
     window.open(url, '_blank').focus();
