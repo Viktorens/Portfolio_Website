@@ -1023,7 +1023,7 @@ footer {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-.scroll-to-top-btn {
+.scroll-to-top {
     display: inline-block;
     border: none;
     color: var(--text-primary-color);
@@ -1048,7 +1048,7 @@ i.bi.bi-chevron-bar-up {
     transform: translateY(0px);
 }
 
-.scroll-to-top-btn:focus {
+.scroll-to-top:focus {
     outline: none;
 }
 
