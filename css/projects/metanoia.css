@@ -117,7 +117,7 @@ p {
 
 /* Description Section */
 .description-content p,
-.logo-content p
+.logo-content p,
 .typeface-content p {
     text-indent: 1.5rem;
     font-size: 15px;
