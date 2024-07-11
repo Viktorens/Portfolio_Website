@@ -36,6 +36,8 @@
             <!-- Overlay content -->
             <div class="overlay-content">
                 <h4>meniu</h4>
+                <a class="menu-button-fade-1 hide-menu-elements-fade" href="./index.html"
+                    onclick="closeNav(); enableScrolling()">acasă</a>
                 <a class="menu-button-fade-1 hide-menu-elements-fade" href="#despre-mine"
                     onclick="closeNav(); enableScrolling()">despre
                     mine</a>
@@ -66,7 +68,7 @@
         <main id="main">
             <!-- Background Image -->
             <div id="blurred-image-container">
-                <img src="../assets/img/backgroundPicture.png" class="img-src" id="blurred-img"></img>
+                <div class="img-src" id="blurred-img"></div>
             </div>
             <!-- Arrow -->
             <div class="arrow"></div>
@@ -74,7 +76,6 @@
             <div id="banner-title" class="banner">
                 <div class="title-container">
                     <h1 data-value="VICTOR GREAVU" id="title-name" class="title">VICTOR GREAVU</h1>
-                    <h5 class="subtitle"></h5>
                 </div>
             </div>
             <!-- Sections -->
@@ -114,7 +115,7 @@
                         <h3>design</h3>
                     </div>
                     <!-- Design Pattern -->
-                    <div class="reveal" id="design-wrapper">
+                    <div class="reveal" id="design-wrapper" data-configuration="2" data-roundness="2">
                         <a href="./projects/one.html" class="shape">
                             <span class="shape-text">O N E</span>
                         </a>
@@ -145,7 +146,7 @@
                         <h3>galerie</h3>
                     </div>
                     <div class="gallery-category-container reveal">
-                        <a href="https://victorgreavu.pixieset.com/casual/" class="gallery-category-text">print</a>
+                        <a href="https://victorgreavu.pixieset.com/casual/" class="gallery-category-text">casual</a>
                         <a href="https://victorgreavu.pixieset.com/casual/">
                             <div class="background-image-casual"></div>
                         </a>
@@ -159,7 +160,7 @@
                     </div>
                     <br>
                     <div class="gallery-category-container reveal">
-                        <a href="https://victorgreavu.pixieset.com/nature/" class="gallery-category-text">fotografie</a>
+                        <a href="https://victorgreavu.pixieset.com/nature/" class="gallery-category-text">natură</a>
                         <a href="https://victorgreavu.pixieset.com/nature/">
                             <div class="background-image-nature"></div>
                         </a>
@@ -205,13 +206,12 @@
             </footer>
         </main>
         <script src="./js/animations.js"></script>
-        <script src="./js/custom-colors.js"></script>
         <script src="./js/copyright.js"></script>
         <script src="./js/menu-overlay.js"></script>
         <!-- <script src="./js/pattern-animation.js"></script> -->
         <script src="./js/random-letters.js"></script>
         <script src="./js/scroll-up.js"></script>
-        <script src="./js/theme.js"></script>
+        <script type="module" src="./js/theme.js"></script>
 
     </body>
 

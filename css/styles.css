@@ -32,7 +32,11 @@ p {
     right: 0;
     z-index: -1;
     width: 100vw;
-    object-fit: cover;
+    background-image: var(--background-image);
+    background-position: center center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* --- Banner Title --- */
@@ -67,92 +71,6 @@ p {
     width: 100%;
     flex-direction: column;
     overflow: hidden;
-}
-
-.subtitle {
-    padding: 0px 20px;
-    color: var(--text-primary-color);
-    text-shadow: 0px 0px 20px var(--text-primary-color);
-}
-
-/* --- Menu Button --- */
-.menubutton {
-    display: flex;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: top 0.5s;
-    align-items: center;
-    justify-content: center;
-    text-align: initial;
-    z-index: 4;
-    transition: .4s;
-}
-
-.transparent-menubutton {
-    transition: 0.7s;
-    opacity: 0;
-}
-
-.no-transparent-menubutton {
-    transition: 0.7s;
-    opacity: 100%;
-}
-
-.banner-wrapper {
-    place-content: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.banner-button {
-    text-decoration: none;
-    color: var(--text-primary-color) !important;
-}
-
-.banner-wrapper .banner-button {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    margin: 0 5px;
-    overflow: hidden;
-    background-image: linear-gradient(120deg, var(--3-color) 0%, var(--4-color) 100%);
-    border-radius: 50px;
-    cursor: pointer;
-    align-items: center;
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-    transition: all 0.3s ease-out;
-}
-
-.banner-wrapper .banner-button:hover {
-    width: 240px;
-}
-
-.banner-wrapper .banner-button .icon {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-}
-
-.banner-wrapper .banner-button .icon i {
-    font-size: 30px;
-    line-height: 2.1em;
-    transition: all 0.3s ease-out;
-    color: whitesmoke;
-}
-
-.banner-wrapper .banner-button span {
-    font-size: 30px;
-    font-weight: 800;
-    letter-spacing: 7px;
-    line-height: 60px;
-    margin-left: 5px;
-    transition: all 0.3s ease-out;
-    color: whitesmoke;
 }
 
 /* Line */

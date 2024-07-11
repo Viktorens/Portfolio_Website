@@ -1,6 +1,6 @@
 :root{
-    --3-color: #bae0ab;
-    --4-color: #e7d5a2;
+    --3-color: #bae0ab !important;
+    --4-color: #e7d5a2 !important;
 }
 
 html * {
@@ -229,6 +229,7 @@ fill: var(--text-primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 20px 0;
 }
 
 .color-circle {

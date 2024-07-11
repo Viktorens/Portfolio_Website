@@ -132,7 +132,7 @@
     font-size: 30px;
     line-height: 2.1em;
     transition: all 0.3s ease-out;
-    color: whitesmoke;
+    color: var(--text-primary-color);
 }
 
 .banner-wrapper .banner-button span {
@@ -142,7 +142,7 @@
     line-height: 60px;
     margin-left: 5px;
     transition: all 0.3s ease-out;
-    color: whitesmoke;
+    color: var(--text-primary-color);
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
