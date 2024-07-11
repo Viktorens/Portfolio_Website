@@ -117,6 +117,7 @@ p {
 
 /* Description Section */
 .description-content p,
+.description-details p,
 .logo-content p,
 .typeface-content p {
     text-indent: 1.5rem;
@@ -137,8 +138,6 @@ p {
     justify-content: center;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    -webkit-hyphens: auto;
-    hyphens: auto;
     text-align: justify;
     margin: 40px 0 20px 0;
     line-height: 40px;
@@ -152,6 +151,7 @@ p {
     font-size: 15px;
     line-height: 26px;
     text-align: left;
+    margin-top: 20px;
 }
 
 .description-details ul {
