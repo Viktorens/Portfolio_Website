@@ -1,6 +1,6 @@
 :root{
-    --3-color: #FEBE98 !important;
-    --4-color: #EE8283 !important;
+    --3-color: #2E5BA9 !important;
+    --4-color: #00387C !important;
 }
 
 html * {
@@ -56,9 +56,20 @@ p {
     overflow: hidden;
 }
 
-.title-png {
-    width: 40vw;
-    z-index: -1
+.title {
+    padding: 0px 20px;
+    text-align: center;
+    top: 40%;
+    color: black;
+    font-size: 3.5vmax;
+    font-weight: 800;
+    cursor: default;
+    border-radius: 30px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    white-space: nowrap;
 }
 
 /* Line */
@@ -233,15 +244,15 @@ p {
 }
 
 .color-1 {
-    background-color: white;
+    background-color: #2E5BA9;
 }
 
 .color-2 {
-    background-color: #FEBE98;
+    background-color: #00387C;
 }
 
 .color-3 {
-    background-color: #EE8283;
+    background-color: black;
 }
 
 /* Pictures Section */
@@ -289,9 +300,6 @@ p {
     .typace-example {
         margin-top: 50px;
     }
-    .title-png {
-        width: 70vw;
-    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -305,9 +313,6 @@ p {
     .typace-example {
         margin-top: 50px;
     }
-    .title-png {
-        width: 70vw;
-    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -320,9 +325,6 @@ p {
     }
     .typace-example {
         margin-top: 0;
-    }
-    .title-png {
-        width: 40vw;
     }
 }
 
