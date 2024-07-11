@@ -84,6 +84,7 @@ p {
 
 .description-title,
 .logo-title,
+.typeface-title,
 .color-title {
     display: flex;
     align-items: center;
@@ -92,6 +93,7 @@ p {
 
 .description-title h3,
 .logo-title h3,
+.typeface-title h3,
 .color-title h3{
     text-align: center;
     padding: 8px 25px;
@@ -115,7 +117,8 @@ p {
 
 /* Description Section */
 .description-content p,
-.logo-content p {
+.logo-content p
+.typeface-content p {
     text-indent: 1.5rem;
     font-size: 15px;
     line-height: 26px;
@@ -185,10 +188,6 @@ p {
     align-items: center;
 }
 
-.typeface {
-    margin: 150px 0; 
-}
-
 /* Color Section */
 .color-description {
     text-align: justify;
@@ -197,7 +196,8 @@ p {
     margin-top: 30px;
 }
 
-.color {
+.color,
+.typeface {
     padding: 40px 0;
 }
 
@@ -283,6 +283,9 @@ p {
     .color-description {
         width: 80%;
     }
+    .typace-example {
+        margin-top: 50px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -293,6 +296,9 @@ p {
     .color-description {
         width: 80%;
     }
+    .typace-example {
+        margin-top: 50px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -302,6 +308,9 @@ p {
     }
     .color-description {
         width: 50%;
+    }
+    .typace-example {
+        margin-top: 0;
     }
 }
 
