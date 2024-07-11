@@ -201,6 +201,11 @@ p {
     align-items: center;
 }
 
+.logo-icon,
+.typeface-example {
+    margin: 30px 0;
+}
+
 /* Color Section */
 .color-description {
     text-align: justify;
