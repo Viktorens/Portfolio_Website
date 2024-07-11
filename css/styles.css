@@ -169,7 +169,7 @@ p {
     letter-spacing: 3px;
 }
 
-/* gallery Section */
+/* Gallery Section */
 .gallery-category-container {
     position: relative;
     text-align: center;
@@ -273,11 +273,14 @@ p {
     transition-timing-function: ease-in-out;
 }
 
+#design-wrapper>.shape:nth-child(5) .shape-text {
+    color: black;
+}
+
 .shape-text {
     color: var(--text-primary-color);
     transform: rotate(-90deg);
     white-space: nowrap;
-    
 }
 
 .shape {
@@ -289,27 +292,27 @@ p {
 
 /* Shapes Color */
 #design-wrapper>.shape:nth-child(1) {
-    background-color: var(--3-color);
-    transition: .5s;
-}
-
-#design-wrapper>.shape:nth-child(2) {
-    background-color: var(--4-color);
-    transition: .5s;
-}
-
-#design-wrapper>.shape:nth-child(3) {
-    background-color: var(--5-color);
-    transition: .5s;
-}
-
-#design-wrapper>.shape:nth-child(4) {
     background-color: var(--1-color);
     transition: .5s;
 }
 
-#design-wrapper>.shape:nth-child(5) {
+#design-wrapper>.shape:nth-child(2) {
     background-color: var(--2-color);
+    transition: .5s;
+}
+
+#design-wrapper>.shape:nth-child(3) {
+    background-color: var(--3-color);
+    transition: .5s;
+}
+
+#design-wrapper>.shape:nth-child(4) {
+    background-color: var(--4-color);
+    transition: .5s;
+}
+
+#design-wrapper>.shape:nth-child(5) {
+    background-color: var(--5-color);
     transition: .5s;
 }
 
