@@ -220,8 +220,10 @@ p {
     line-height: 26px;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    -webkit-hyphens: auto;
-    hyphens: auto;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
     text-align: justify;
     margin: 20px;
 }
