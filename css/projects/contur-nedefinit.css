@@ -77,6 +77,16 @@ p {
     text-shadow: 0px 0px 20px var(--text-primary-color);
 }
 
+.title-svg {
+    width: 70vw;
+    z-index: -1
+}
+
+.cls-1-black,
+.cls-4-black {
+    fill: black;
+}
+
 /* Line */
 .line {
     width: 100px;
