@@ -196,7 +196,7 @@ p {
     stroke-width: 0px;
 }
 
-.logo-content, .logo-icon, .typeface-example {
+.logo-content, .logo-icon, .typeface-example, .typeface-content {
     display: flex;
     align-items: center;
 }
