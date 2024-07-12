@@ -214,7 +214,7 @@ p {
 }
 
 .background-image-casual {
-    background-image: url("../assets/img/casual.jpg");
+    background-image: url("../assets/img/casual.webp");
 }
 
 .background-image-events {
@@ -222,7 +222,7 @@ p {
 }
 
 .background-image-nature {
-    background-image: url("../assets/img/nature.jpg");
+    background-image: url("../assets/img/nature.webp");
 }
 .background-image-casual,
 .background-image-events,
