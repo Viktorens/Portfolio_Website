@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="ro">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="title" content="Victor Greavu">
+        <meta name="description" content="Victor's personal website">
+        <meta name="keywords" content="programming, gallery, design">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="Romanian">
+        <meta name="author" content="Victor Greavu">
+        <meta name="designer" content="Victor Greavu">
+        <meta name="copyright" content="Victor Greavu" />
+        <title>Victor Greavu - ONE</title>
+        <link rel="icon" type="image/png" href="../assets/img/projects/one/one.ico" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/overlay.css" type="text/css">
+        <link rel="stylesheet" href="../css/footer.css" type="text/css">
+        <link rel="stylesheet" href="../css/scroll-up.css" type="text/css">
+        <link rel="stylesheet" href="../css/animations.css" type="text/css">
+        <link rel="stylesheet" href="../css/arrow.css" type="text/css">
+        <link rel="stylesheet" href="../css/projects/one.css" type="text/css">
+    </head>
+
+    <body>
+        <!-- The menu overlay -->
+        <div id="my-nav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNav(); enableScrolling()">&times;</a>
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <h4>meniu</h4>
+                <a class="menu-button-fade-1 hide-menu-elements-fade" href="../../index.html"
+                    onclick="closeNav(); enableScrolling()">acasă</a>
+                <a class="menu-button-fade-1 hide-menu-elements-fade" href="../../index.html#despre-mine"
+                    onclick="closeNav(); enableScrolling()">despre
+                    mine</a>
+                <a class="menu-button-fade-2 hide-menu-elements-fade" href="../../index.html#design"
+                    onclick="closeNav(); enableScrolling()">design</a>
+                <a class="menu-button-fade-3 hide-menu-elements-fade" href="../../index.html#gallery"
+                    onclick="closeNav(); enableScrolling()">fotografie</a>
+                <a class="menu-button-fade-4 hide-menu-elements-fade" href="../../index.html#contact"
+                    onclick="closeNav(); enableScrolling()">contact</a>
+            </div>
+        </div>
+        <!-- Menu Bar -->
+        <div class="menubutton show-background" id="navbar">
+            <div class="banner-wrapper" id="navbar-button">
+                <a class="banner-button" onclick="openNav(); disableScrolling()">
+                    <div class="icon"><i class="bi bi-list"></i></div>
+                    <span>meniu</span>
+                </a>
+            </div>
+        </div>
+        <!-- Scroll To Top Button -->
+        <div class="scroll-to-top-container" id="scroll-to-top-container">
+            <button type="button" class="scroll-to-top" id="scroll-to-top">
+                <i class="bi bi-chevron-bar-up"></i>
+            </button>
+        </div>
+        <!-- Main -->
+        <main id="main">
+            <!-- Background Image -->
+            <div id="blurred-image-container">
+                <img src="../assets/img/projects/one/wallpaper.jpg" class="img-src" id="blurred-img"></img>
+            </div>
+            <!-- Arrow -->
+            <div class="arrow"></div>
+            <!-- Title -->
+            <div id="banner-title" class="banner">
+                <div class="title-container">
+                    <img id="title-name" class="title-png" src="../assets/img/projects/one/title-logo.png" alt="project logo">
+                </div>
+            </div>
+            <!-- Sections -->
+            <section class="all-sections">
+                <br>
+                <div class="line"></div>
+                <!-- Description -->
+                <section class="description">
+                    <div class="description-title">
+                        <h3>descrierea<br>evenimentului</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 description-content">
+                            <p class="reveal">Evenimentul „One” organizat de Biserica Adventistă de Ziua a Șaptea din Zona Munteniei, a avut loc la Universitatea Adventus de la Cernica din județul Ilfov în data de 28 - 30 iunie 2024. Participanții au fost tinerii adventiști din zona Munteniei de toate vârstele. Congresul a fost organizat atât pentru cunoaștere cât și pentru suflet având ca subiect principal o tema religioasă. Tema abordată a fost unitatea și credința.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 description-details">
+                            <p class="reveal">A fost necesară crearea următoarelor elemente:</p>
+                            <ul class="description-list">
+                                <li class="reveal"><strong>Concept</strong></li>
+                                <br>
+                                <li class="reveal"><strong>Social Media</strong></li>
+                                    <ul>
+                                        <li class="reveal">Template pentru story-uri si postări</li>
+                                        <li class="reveal">Postări și story pentru invitați</li>
+                                        <li class="reveal">Story animat</li>
+                                    </ul>
+                                <br>
+                                <li class="reveal"><strong>Print</strong></li>
+                                    <ul>
+                                        <li class="reveal">Banner 7.25x1.5m</li>
+                                        <li class="reveal">Stickere</li>
+                                        <li class="reveal">Ecusoane pentru fiecare participant</li>
+                                        <li class="reveal">Tricou personalizat</li>
+                                        <li class="reveal">Insigne</li>
+                                        <li class="reveal">Afișe A3 cu diverse istorisiri biblice</li>
+                                    </ul>
+                                <br>
+                                <li class="reveal"><strong>Tehnic</strong></li>
+                                    <ul>
+                                        <li class="reveal">Animație pentru intro</li>
+                                        <li class="reveal">Animație de tranziție</li>
+                                        <li class="reveal">Animație pentru background</li>
+                                        <li class="reveal">PowerPoint-uri personalizate</li>
+                                        <li class="reveal">Burtiere animate pentru Live</li>
+                                    </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Logo -->
+                <section class="logo">
+                    <div class="logo-title">
+                        <h3>logo</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 logo-icon">
+                            <img class="logo-image reveal" src="../assets/img/projects/one/logo.webp" alt="project logo">
+                        </div>
+                        <div class="col-md-6 col-sm-12 logo-content">
+                            <p class="reveal"><strong>Elementul vizual</strong> central format din doua elemente. Acestea fiind o imagine a unui porumbel si a lui Iisus. La baza se află textul biblic din Efeseni 4:5 „Este un singur Domn, o singură credință, un singur botez”.
+                                <br><br>
+                                <strong>Imaginea lui Iisus</strong> reprezintă „un singur Domn” din versetul biblic. Deasemena forma este aseamănătoare cu cea a unei cruci. Cruce care reprezintă „o singură credință”. Aceasta imagine a fost creată cu Adobe Firefly și mai apoi editată în Adobe Photoshop.
+                                <br><br>
+                                <strong>Porumbelul</strong> reprezintă botezul din textul Biblic. Acesta a fost creat cu ajutorul Adobe Firefly iar apoi editat în Adobe Express.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="typeface">
+                    <div class="typeface-title">
+                        <h3>typeface</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12 typeface-content">
+                            <p class="reveal">Typeface-ul “Krok” este un typeface sans serif foarte rotund care a fost folosit pentru logo-ul congresului de tineret “ONE” deoarece transmite modernitate și accesibilitate, aspecte esențiale pentru a atrage un public tânăr. Formele rotunde simbolizează unitatea și prietenia, reflectând perfect tema de unitate. În plus, fontul este extrem de lizibil pe toate suporturile, asigurând o comunicare clară și eficientă.
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-sm-12 typeface-example reveal">
+                            <svg width="100%" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2560 766">
+                                <path class="cls-1" d="M806.95,383c0,196.14-160.09,360.55-374.98,360.55S57,579.14,57,383,217.09,22.45,431.98,22.45s374.98,164.41,374.98,360.55h-.01ZM665.62,383c0-138.45-98.07-242.29-233.64-242.29s-233.64,105.28-233.64,242.29,98.07,242.3,233.64,242.3,233.64-103.84,233.64-242.3ZM1049.25,401.76v312.95h-141.34v-312.95c0-248.07,158.64-379.32,373.53-379.32s376.41,131.25,376.41,379.32v312.95h-141.34v-312.95c0-165.86-98.07-253.84-235.08-253.84s-232.2,87.97-232.2,253.84h.02,0ZM2503,440.7c-25.96,165.85-173.06,302.86-370.65,302.86-214.89,0-373.53-164.41-373.53-360.55S1917.47,22.46,2132.35,22.46c193.26,0,344.69,134.13,370.65,302.87h-141.34v115.38h141.34ZM2361.66,325.32c-20.19-103.84-109.6-184.6-229.31-184.6s-203.35,76.45-226.43,184.6h455.74ZM1905.92,440.7c21.64,106.73,106.73,184.6,226.43,184.6s209.12-80.76,229.31-184.6h-455.74Z"/>
+                              </svg>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Color -->
+                <section class="color">
+                    <div id="color" class="color-title">
+                        <h3>culori</h3>
+                    </div>
+                   
+                    <div class="row reveal">
+                        <div class="color-info col-md">
+                            <div class="color-circle color-1"></div>
+                            <div class="color-details">
+                                <p><strong>White</strong></p>
+                                <p><strong>HEX:</strong> #FFFFFF</p>
+                                <p><strong>RGB:</strong> 256 256 256</p>
+                                <p><strong>CMYK:</strong> 0 0 0 0</p>
+                            </div>
+                        </div>
+                        <div class="color-info col-md">
+                            <div class="color-circle color-2"></div>
+                            <div class="color-details">
+                                <p><strong>Peach Fuzz</strong></p>
+                                <p><strong>HEX:</strong> #FEBE98</p>
+                                <p><strong>RGB:</strong> 254 190 152</p>
+                                <p><strong>CMYK:</strong> 0 25 40 0</p>
+                            </div>
+                        </div>
+                        <div class="color-info col-md">
+                            <div class="color-circle color-3"></div>
+                            <div class="color-details">
+                                <p><strong>Rose</strong></p>
+                                <p><strong>HEX:</strong> #EE8283</p>
+                                <p><strong>RGB:</strong> 236 130 131</p>
+                                <p><strong>CMYK:</strong> 0 45 44 7</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="color-description reveal">
+                        Albul simbolizează puritatea și claritatea, creând un fundal curat care pune în valoare celelalte culori. El oferă un fundal neutru care ajută la evidențierea celorlalte culori și asigură lizibilitatea textului și claritatea imaginilor. De asemenea, utilizarea albului ca spațiu negativ adaugă o senzație de deschidere și respirabilitate în design, făcându-l să pară mai curat și mai organizat.
+                        <br><br>
+                        Fuzz peach, fiind culoarea anului 2024, conferă logo-ului o notă modernă și contemporană, atrăgând tinerii și conectându-se cu tendințele actuale din design și modă. Această culoare caldă și vibrantă aduce o senzație de confort și atracție vizuală, stimulând sentimente pozitive și de apropiere esențiale pentru atmosfera unui congres de tineret. În plus, fuzz peach adaugă energie și dinamism designului, reflectând entuziasmul și vitalitatea participanților tineri.
+                        <br><br>
+                        Rozul a fost ales pentru a adăuga căldură și empatie, subliniind un mediu prietenos și primitor. Asociată cu sentimente de iubire și prietenie, această culoare contribuie la crearea unui sentiment de comunitate și sprijin în cadrul evenimentului. De asemenea, rozul este legat de creativitate și exprimarea individuală, încurajând participanții să se simtă inspirați și să-și exprime personalitatea, asigurând astfel un echilibru armonios în designul logo-ului.
+                    </p>
+                </section>
+
+                <section class="picture-wrapper">
+                    <div class="picture-item reveal" style="background-image: url(../assets/img/projects/one/one-1.jpg)"></div>
+                    <div class="picture-item reveal" style="background-image: url(../assets/img/projects/one/one-2.jpg)"></div>
+                    <div class="picture-item reveal" style="background-image: url(../assets/img/projects/one/one-3.jpg)"></div>
+                    <div class="picture-item reveal" style="background-image: url(../assets/img/projects/one/one-4.jpg)"></div>
+                    <div class="picture-item reveal" style="background-image: url(../assets/img/projects/one/one-5.jpg)"></div>
+                    <div class="picture-item reveal" style="background-image: url(../assets/img/projects/one/one-6.jpg)"></div>
+                    <div class="picture-item reveal" style="background-image: url(../assets/img/projects/one/one-7.jpg)"></div>
+                    <div class="picture-item reveal" style="background-image: url(../assets/img/projects/one/one-8.jpg)"></div>
+                    <div class="picture-item reveal" style="background-image: url(../assets/img/projects/one/one-9.jpg)"></div>
+                </section>
+                
+            </section>
+            <!-- Footer -->
+            <footer>
+                <div class="footer-bg">
+                    <!-- Social Media -->
+                    <div class="social-media">
+                        <a class="button button-fade-1 reveal" href="https://www.instagram.com/victor.greavu"
+                            target="_blank">
+                            <div class="icon icon-instagram">
+                                <h3><i class="bi bi-instagram"></i></h3>
+                            </div>
+                            <span>Instagram</span>
+                        </a>
+                        <a class="button button-fade-2 reveal" href=" https://www.linkedin.com/in/victor-greavu-8b8b85248/" target="_blank">
+                            <div class="icon icon-linkedin"><i class="bi bi-linkedin"></i></div>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a class="button button-fade-3 reveal" href="https://github.com/Viktorens" target="_blank">
+                            <div class="icon icon-github"><i class="bi bi-github"></i></div>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                    <!-- Copyright -->
+                    <div class="copyright reveal">
+                        <a class="copyright" id="copyright" href="https://maps.app.goo.gl/8oEuWwMCe5JX8BCD6"
+                            target="_blank"></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="../js/animations.js"></script>
+        <script src="../js/copyright.js"></script>
+        <script src="../js/menu-overlay.js"></script>
+        <script src="../js/random-letters.js"></script>
+        <script src="../js/scroll-up.js"></script>
+        <script src="../js/theme.js"></script>
+    </body>
+
+</html>

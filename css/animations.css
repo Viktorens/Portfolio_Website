@@ -1,0 +1,56 @@
+/* --- Fade In/Out classes --- */
+
+.reveal {
+    filter: blur(5px);
+    transform: translateY(10%);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.reveal.active {
+    filter: blur(0);
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.hide-menu-elements-fade {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s !important;
+}
+
+.show-elements-fade {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transform: translateX(0);
+}
+
+.backgroundImage:nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.backgroundImage:nth-child(3) {
+    transition-delay: 800ms;
+}
+
+.button-fade-2 {
+    transition-delay: 200ms !important;
+}
+
+.button-fade-3 {
+    transition-delay: 400ms !important;
+}
+
+.menu-button-fade-2 {
+    transition-delay: 200ms !important;
+}
+
+.menu-button-fade-3 {
+    transition-delay: 400ms !important;
+}
+
+.menu-button-fade-4 {
+    transition-delay: 600ms !important;
+}

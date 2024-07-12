@@ -1,0 +1,189 @@
+/* --- Footer --- */
+footer {
+    background-color: transparent;
+    text-align: initial;
+    color: var(--text-primary-color);
+    justify-content: center;
+    padding-bottom: 30px !important;
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 30px;
+    width: 95%;
+}
+
+.footer-bg {
+    background-color: var(--background-primary-color);
+    border-radius: 30px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.65);
+}
+
+/* --- Social Media Buttons --- */
+.social-media {
+    display: flex;
+    place-content: center;
+    padding: 25px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-primary-color);
+}
+
+.social-media .button {
+    display: inline-block;
+    border: none;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background-image: var(--background-primary-color);
+    border-radius: 50px;
+    cursor: pointer;
+    align-items: center;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    transition: all 0.3s ease-out;
+}
+
+.social-media .button:nth-child(1):hover {
+    width: 225px;
+}
+
+.social-media .button:nth-child(2):hover {
+    width: 235px;
+}
+
+.social-media .button:nth-child(3):hover {
+    width: 190px;
+}
+
+.social-media .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.social-media .button:nth-child(1):hover .icon {
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-media .button:nth-child(2):hover .icon {
+    background: #0882bd;
+}
+
+.social-media .button:nth-child(3):hover .icon {
+    background: var(--background-primary-color);
+}
+
+.social-media .button .icon i {
+    font-size: 25px;
+    line-height: 2.4em;
+}
+
+.social-media .button:hover .icon i {
+    color: var(--text-primary-color);
+}
+
+.social-media .button:nth-child(1):hover .icon i,
+.social-media .button:nth-child(2):hover .icon i {
+    background: whitesmoke;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-media .button span {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+.social-media .button:nth-child(1) span {
+    color: #E1306C;
+}
+
+.social-media .button:nth-child(2) span {
+    color: #0882bd;
+}
+
+.social-media .button:nth-child(3) span {
+    color: var(--text-primary-color);
+}
+
+.icon-github {
+    color: var(--text-primary-color);
+}
+
+.icon-instagram h3 {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.icon-linkedin {
+    color: #0882bd;
+}
+
+.icon-instagram i:before {
+    display: inline;
+}
+
+/* --- Copyright --- */
+.copyright {
+    cursor: pointer;
+    text-decoration: var(--text-primary-color);
+    color: var(--text-primary-color);
+    padding-bottom: 1%;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.copyright:hover {
+    text-decoration: underline;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {
+    .social-media .button:nth-child(1):hover {
+        width: 60px;
+    }
+
+    .social-media .button:nth-child(2):hover {
+        width: 60px;
+    }
+
+    .social-media .button:nth-child(3):hover {
+        width: 60px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
