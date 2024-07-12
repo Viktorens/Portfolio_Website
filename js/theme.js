@@ -12,7 +12,7 @@ function setColorScheme(scheme) {
             document.documentElement.style.setProperty('--text-primary-color', 'whitesmoke');
             document.documentElement.style.setProperty('--text-secondary-color', '#252525'); // Sections Title Color
             document.documentElement.style.setProperty('--panel-primary-color', '#161616');
-            document.documentElement.style.setProperty('--background-image', 'url(../assets/img/backgroundImage-dark.png)');
+            document.documentElement.style.setProperty('--background-image', 'url(../assets/img/backgroundImage-dark.webp)');
             
             function readTextFileDark(file, callback) {
                 var rawFile = new XMLHttpRequest();
@@ -48,7 +48,7 @@ function setColorScheme(scheme) {
             document.documentElement.style.setProperty('--text-primary-color', '#252525');
             document.documentElement.style.setProperty('--text-secondary-color', '#252525'); // Sections Title Color
             document.documentElement.style.setProperty('--panel-primary-color', 'white');
-            document.documentElement.style.setProperty('--background-image', 'url(../assets/img/backgroundImage-light.jpg)');
+            document.documentElement.style.setProperty('--background-image', 'url(../assets/img/backgroundImage-light.webp)');
             
             function readTextFileLight(file, callback) {
                 var rawFile = new XMLHttpRequest();
