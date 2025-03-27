@@ -5,6 +5,8 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
+    justify-content: space-between;
+    width: 95%;
     padding-bottom: 50px;
 }
 
@@ -12,10 +14,10 @@
     padding: 0;
     background-size: cover;
     background-position: center;
-    width: 30%;
-    margin: 1%;
     border-radius: 15px;
     transition: transform 0.5s ease;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 .picture-item:hover {
@@ -27,14 +29,16 @@
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
     .picture-wrapper .picture-item {
-        height: 8rem;
+        height: 20rem;
+        width: 100%;
     }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .picture-wrapper .picture-item {
-        height: 8rem;
+        height: 30rem;
+        width: 100%;
     }
 }
 
@@ -42,6 +46,7 @@
 @media (min-width: 768px) {
     .picture-wrapper .picture-item {
         height: 20rem;
+        width: 30%;
     }
 }
 

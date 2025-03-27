@@ -6,7 +6,7 @@
 
 #design-wrapper {
     aspect-ratio: 1.618;
-    width: 90vmin;
+    width: 95%;
     position: relative;
 }
 
@@ -33,6 +33,45 @@
 .shape:hover .project-image {
     opacity: 1;
 }
+
+/* Shapes Background Image */
+#design-wrapper>.shape:nth-child(1) .project-image {
+    background-image: url(/assets/img/projects/sevartis/wallpaper.jpg);
+}
+
+#design-wrapper>.shape:nth-child(2) .project-image {
+    background-image: url(/assets/img/projects/metanoia/wallpaper.png);
+}
+
+#design-wrapper>.shape:nth-child(3) .project-image {
+    background-image: none;
+}
+
+#design-wrapper>.shape:nth-child(4) .project-image{
+    background-image: none;
+}
+
+#design-wrapper>.shape:nth-child(5) .project-image {
+    background-image: url(/assets/img/projects/contur-nedefinit/wallpaper.png);
+}
+
+#design-wrapper>.shape:nth-child(6) .project-image {
+    background-image: url(/assets/img/projects/medicus/wallpaper.jpg);
+}
+
+#design-wrapper>.shape:nth-child(7) .project-image {
+    background-image: url(/assets/img/about.jpg);
+}
+
+#design-wrapper>.shape:nth-child(8) .project-image {
+    background-image: url(/assets/img/projects/one/wallpaper.jpg);
+}
+
+#design-wrapper>.shape .project-image {
+    transition: .5s ease;
+}
+
+/* Text Colors */
 
 #design-wrapper>.shape:nth-child(1) .shape-text {
     color: var(--1-color-text);
@@ -81,6 +120,11 @@
     white-space: nowrap;
 }
 
+.shape:hover .shape-text {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
 .shape {
     display: flex;
     align-items: center;
@@ -93,42 +137,38 @@
 
 /* Shapes Color */
 #design-wrapper>.shape:nth-child(1) {
-    background-color: var(--1-color);
-    transition: .5s;
+    background-color: var(--1-color); 
 }
 
 #design-wrapper>.shape:nth-child(2) {
     background-color: var(--2-color);
-    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(3) {
     background-color: var(--3-color);
-    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(4) {
     background-color: var(--4-color);
-    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(5) {
     background-color: var(--5-color);
-    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(6) {
     background-color: var(--6-color);
-    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(7) {
     background-color: var(--7-color);
-    transition: .5s;
 }
 
 #design-wrapper>.shape:nth-child(8) {
     background-color: var(--8-color);
+}
+
+#design-wrapper>.shape {
     transition: .5s;
 }
 

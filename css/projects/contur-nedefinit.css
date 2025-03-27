@@ -132,7 +132,6 @@ p {
     -webkit-hyphens: none;
     hyphens: none;
     text-align: justify;
-    margin: 0 20px;
 }
 
 .description-name {
@@ -170,6 +169,18 @@ p {
 .logo-content, .logo-icon, .contur-icon {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.description-content {
+    display: flex;
+    justify-content: center;
+}
+
+.description-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -179,7 +190,6 @@ p {
     -webkit-mask: url(/assets/img/projects/contur-nedefinit/symbol.svg) no-repeat right;
     mask: url(/assets/img/projects/contur-nedefinit/symbol.svg) no-repeat right;
     height: 30rem;
-    width: 100%;
     margin-top: 20px
 }
 
@@ -188,7 +198,6 @@ p {
     -webkit-mask: url(/assets/img/projects/contur-nedefinit/logo.svg) no-repeat right;
     mask: url(/assets/img/projects/contur-nedefinit/logo.svg) no-repeat right;
     height: 20rem;
-    width: 100%;
 }
 
 /* Color Section */
@@ -197,6 +206,7 @@ p {
     margin: auto;
     display: flex;
     margin-top: 30px;
+    width: 95%;
 }
 
 .color {
@@ -265,8 +275,14 @@ p {
     .description-name {
         font-size: 25px;
     }
-    .color-description {
-        width: 80%;
+
+    .description-content p,
+    .description-details p,
+    .logo-content p,
+    .typeface-content p,
+    .logo-svg,
+    .symbol-svg {
+        width: 95%;
     }
 }
 
@@ -275,8 +291,14 @@ p {
     .description-name {
         font-size: 45px;
     }
-    .color-description {
-        width: 80%;
+    
+    .description-content p,
+    .description-details p,
+    .logo-content p,
+    .typeface-content p,
+    .logo-svg,
+    .symbol-svg {
+        width: 95%;
     }
 }
 
@@ -285,8 +307,14 @@ p {
     body {
         text-align: initial;
     }
-    .color-description {
-        width: 50%;
+
+    .description-content p,
+    .description-details p,
+    .logo-content p,
+    .typeface-content p,
+    .logo-svg,
+    .symbol-svg {
+        width: 90%;
     }
 }
 

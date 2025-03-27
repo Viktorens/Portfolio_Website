@@ -141,7 +141,6 @@ p {
     -webkit-hyphens: none;
     hyphens: none;
     text-align: justify;
-    margin: 0 20px;
 }
 
 .description-name {
@@ -199,6 +198,18 @@ p {
 .logo-content, .logo-icon, .typeface-example, .typeface-content {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.description-content {
+    display: flex;
+    justify-content: center;
+}
+
+.description-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logo-icon,
@@ -212,6 +223,7 @@ p {
     margin: auto;
     display: flex;
     margin-top: 30px;
+    width: 95%;
 }
 
 .color,
@@ -266,7 +278,6 @@ p {
     -webkit-mask: url(/assets/img/projects/medicus/typeface.svg) no-repeat right;
     mask: url(/assets/img/projects/medicus/typeface.svg) no-repeat right;
     height: 10rem;
-    width: 100%;
 }
 
 /* --- Media Queries ---- */
@@ -290,11 +301,16 @@ p {
     .description-name {
         font-size: 25px;
     }
-    .color-description {
-        width: 80%;
-    }
     .typace-example {
         margin-top: 50px;
+    }
+    
+    .description-content p,
+    .description-details p,
+    .logo-content p,
+    .typeface-content p,
+    .typeface-svg {
+        width: 95%;
     }
 }
 
@@ -303,11 +319,17 @@ p {
     .description-name {
         font-size: 45px;
     }
-    .color-description {
-        width: 80%;
-    }
+
     .typace-example {
         margin-top: 50px;
+    }
+    
+    .description-content p,
+    .description-details p,
+    .logo-content p,
+    .typeface-content p,
+    .typeface-svg {
+        width: 95%;
     }
 }
 
@@ -316,11 +338,17 @@ p {
     body {
         text-align: initial;
     }
-    .color-description {
-        width: 50%;
-    }
+
     .typace-example {
         margin-top: 0;
+    }
+    
+    .description-content p,
+    .description-details p,
+    .logo-content p,
+    .typeface-content p,
+    .typeface-svg {
+        width: 90%;
     }
 }
 
