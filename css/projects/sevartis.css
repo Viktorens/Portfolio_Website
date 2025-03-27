@@ -1,6 +1,6 @@
 :root{
-    --3-color: #2E5BA9 !important;
-    --4-color: #00387C !important;
+    --3-color: #f3d7c8 !important;
+    --4-color: #ecb595 !important;
 }
 
 html * {
@@ -56,20 +56,9 @@ p {
     overflow: hidden;
 }
 
-.title {
-    padding: 0px 20px;
-    text-align: center;
-    top: 40%;
-    color: black;
-    font-size: 3.5vmax;
-    font-weight: 800;
-    cursor: default;
-    border-radius: 30px;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-bottom: 0;
-    letter-spacing: 3px;
-    white-space: nowrap;
+.title-png {
+    width: 40vw;
+    z-index: -1
 }
 
 /* Line */
@@ -201,7 +190,6 @@ p {
     align-items: center;
 }
 
-.logo-icon,
 .typeface-example {
     margin: 30px 0;
 }
@@ -249,23 +237,23 @@ p {
 }
 
 .color-1 {
-    background-color: #2E5BA9;
+    background-color: #f7f7f0;
 }
 
 .color-2 {
-    background-color: #00387C;
+    background-color: #f5dbcc;
 }
 
 .color-3 {
-    background-color: black;
+    background-color: #26332E;
 }
 
 /* SVG */
 .typeface-svg {
     background-color: var(--text-primary-color);
-    -webkit-mask: url(/assets/img/projects/medicus/typeface.svg) no-repeat right;
-    mask: url(/assets/img/projects/medicus/typeface.svg) no-repeat right;
-    height: 10rem;
+    -webkit-mask: url(/assets/img/projects/sevartis/typeface.svg) no-repeat right;
+    mask: url(/assets/img/projects/sevartis/typeface.svg) no-repeat right;
+    height: 20rem;
     width: 100%;
 }
 
@@ -296,6 +284,9 @@ p {
     .typace-example {
         margin-top: 50px;
     }
+    .title-png {
+        width: 70vw;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -309,6 +300,9 @@ p {
     .typace-example {
         margin-top: 50px;
     }
+    .title-png {
+        width: 70vw;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -321,6 +315,9 @@ p {
     }
     .typace-example {
         margin-top: 0;
+    }
+    .title-png {
+        width: 40vw;
     }
 }
 

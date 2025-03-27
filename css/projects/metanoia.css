@@ -248,22 +248,13 @@ p {
     background-color: #000000;
 }
 
-/* Pictures Section */
-
-.picture-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    padding-bottom: 50px;
-}
-
-.picture-wrapper .picture-item {
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    width: 33.33%;
-    height: 28vw;
+/* SVG */
+.typeface-svg {
+    background-color: var(--text-primary-color);
+    -webkit-mask: url(/assets/img/projects/metanoia/typeface.svg) no-repeat right;
+    mask: url(/assets/img/projects/metanoia/typeface.svg) no-repeat right;
+    height: 10rem;
+    width: 100%;
 }
 
 /* --- Media Queries ---- */
