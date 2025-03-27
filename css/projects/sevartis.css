@@ -289,9 +289,11 @@ p {
     .description-name {
         font-size: 25px;
     }
+    
     .typace-example {
         margin-top: 50px;
     }
+
     .title-png {
         width: 70vw;
     }
@@ -310,12 +312,15 @@ p {
     .description-name {
         font-size: 45px;
     }
+
     .typace-example {
         margin-top: 50px;
     }
+
     .title-png {
         width: 70vw;
     }
+
     .description-content p,
     .description-details p,
     .logo-content p,
@@ -330,12 +335,15 @@ p {
     body {
         text-align: initial;
     }
+
     .typace-example {
         margin-top: 0;
     }
+
     .title-png {
         width: 40vw;
     }
+
     .description-content p,
     .description-details p,
     .logo-content p,
