@@ -1,6 +1,6 @@
 :root{
-    --3-color: #B7C8E7 !important;
-    --4-color: #b6a3df !important;
+    --3-color: #f3d7c8 !important;
+    --4-color: #ecb595 !important;
 }
 
 html * {
@@ -57,7 +57,7 @@ p {
 }
 
 .title-png {
-    width: 70vw;
+    width: 40vw;
     z-index: -1
 }
 
@@ -249,23 +249,23 @@ p {
 }
 
 .color-1 {
-    background-color: white;
+    background-color: #f7f7f0;
 }
 
 .color-2 {
-    background-color: #B7C8E7;
+    background-color: #f5dbcc;
 }
 
 .color-3 {
-    background-color: #000000;
+    background-color: #26332E;
 }
 
 /* SVG */
 .typeface-svg {
     background-color: var(--text-primary-color);
-    -webkit-mask: url(/assets/img/projects/metanoia/typeface.svg) no-repeat right;
-    mask: url(/assets/img/projects/metanoia/typeface.svg) no-repeat right;
-    height: 10rem;
+    -webkit-mask: url(/assets/img/projects/sevartis/typeface.svg) no-repeat right;
+    mask: url(/assets/img/projects/sevartis/typeface.svg) no-repeat right;
+    height: 20rem;
 }
 
 /* --- Media Queries ---- */
@@ -289,10 +289,15 @@ p {
     .description-name {
         font-size: 25px;
     }
+    
     .typace-example {
         margin-top: 50px;
     }
-    
+
+    .title-png {
+        width: 70vw;
+    }
+
     .description-content p,
     .description-details p,
     .logo-content p,
@@ -311,7 +316,11 @@ p {
     .typace-example {
         margin-top: 50px;
     }
-    
+
+    .title-png {
+        width: 70vw;
+    }
+
     .description-content p,
     .description-details p,
     .logo-content p,
@@ -326,11 +335,15 @@ p {
     body {
         text-align: initial;
     }
-    
+
     .typace-example {
         margin-top: 0;
     }
-    
+
+    .title-png {
+        width: 40vw;
+    }
+
     .description-content p,
     .description-details p,
     .logo-content p,

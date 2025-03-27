@@ -132,7 +132,6 @@ p {
     -webkit-hyphens: none;
     hyphens: none;
     text-align: justify;
-    margin: 0 20px;
 }
 
 .description-name {
@@ -167,41 +166,38 @@ p {
 }
 
 /* Logo Section */
-.logo-svg, .contur-svg {
-    width: 90%;
-    border-radius: 30px;
-    transition: all 0.6s ease-out;
-    margin: auto;
-    display: flex;
-}
-
-.cls-1 {
-fill: var(--text-primary-color);
-}
-
-.cls-1, .cls-2, .cls-3, .cls-4 {
-stroke-width: 0px;
-}
-
-.cls-2 {
-fill: #e8b32a;
-}
-
-.cls-3 {
-fill: none;
-}
-
-.cls-4 {
-fill: var(--text-primary-color);
-}
-
 .logo-content, .logo-icon, .contur-icon {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.contur {
-    margin-top: 20px;
+.description-content {
+    display: flex;
+    justify-content: center;
+}
+
+.description-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* SVG */
+.symbol-svg {
+    background-color: var(--text-primary-color);
+    -webkit-mask: url(/assets/img/projects/contur-nedefinit/symbol.svg) no-repeat right;
+    mask: url(/assets/img/projects/contur-nedefinit/symbol.svg) no-repeat right;
+    height: 30rem;
+    margin-top: 20px
+}
+
+.logo-svg {
+    background-color: var(--text-primary-color);
+    -webkit-mask: url(/assets/img/projects/contur-nedefinit/logo.svg) no-repeat right;
+    mask: url(/assets/img/projects/contur-nedefinit/logo.svg) no-repeat right;
+    height: 20rem;
 }
 
 /* Color Section */
@@ -210,6 +206,7 @@ fill: var(--text-primary-color);
     margin: auto;
     display: flex;
     margin-top: 30px;
+    width: 95%;
 }
 
 .color {
@@ -257,24 +254,6 @@ fill: var(--text-primary-color);
     background-color: #E9B427;
 }
 
-/* Pictures Section */
-
-.picture-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    padding-bottom: 50px;
-}
-
-.picture-wrapper .picture-item {
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    width: 33.33%;
-    height: 28vw;
-}
-
 /* --- Media Queries ---- */
 
 @media (prefers-reduced-motion) {
@@ -296,8 +275,14 @@ fill: var(--text-primary-color);
     .description-name {
         font-size: 25px;
     }
-    .color-description {
-        width: 80%;
+
+    .description-content p,
+    .description-details p,
+    .logo-content p,
+    .typeface-content p,
+    .logo-svg,
+    .symbol-svg {
+        width: 95%;
     }
 }
 
@@ -306,8 +291,14 @@ fill: var(--text-primary-color);
     .description-name {
         font-size: 45px;
     }
-    .color-description {
-        width: 80%;
+    
+    .description-content p,
+    .description-details p,
+    .logo-content p,
+    .typeface-content p,
+    .logo-svg,
+    .symbol-svg {
+        width: 95%;
     }
 }
 
@@ -316,8 +307,14 @@ fill: var(--text-primary-color);
     body {
         text-align: initial;
     }
-    .color-description {
-        width: 50%;
+
+    .description-content p,
+    .description-details p,
+    .logo-content p,
+    .typeface-content p,
+    .logo-svg,
+    .symbol-svg {
+        width: 90%;
     }
 }
 

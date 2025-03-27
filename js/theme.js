@@ -14,32 +14,9 @@ function setColorScheme(scheme) {
             document.documentElement.style.setProperty('--panel-primary-color', '#161616');
             document.documentElement.style.setProperty('--background-image', 'url(../assets/img/backgroundImage-dark.webp)');
             
-            function readTextFileDark(file, callback) {
-                var rawFile = new XMLHttpRequest();
-                rawFile.overrideMimeType("application/json");
-                rawFile.open("GET", file, true);
-                rawFile.onreadystatechange = function () {
-                    if (rawFile.readyState === 4 && rawFile.status == "200") {
-                        callback(rawFile.responseText);
-                    }
-                }
-                rawFile.send(null);
-            }
-            
-            readTextFileDark("../js/colors-dark.json", function (text) {
-                var colors = JSON.parse(text); //parse JSON
-                document.documentElement.style.setProperty('--dark-color', 'rgb(' + parseInt(colors[7][0], 10) + ', ' + parseInt(colors[7][1], 10) + ', ' + parseInt(colors[7][2], 10) + ')');
-                document.documentElement.style.setProperty('--light-color', 'rgb(' + parseInt(colors[8][0], 10) + ', ' + parseInt(colors[8][1], 10) + ', ' + parseInt(colors[8][2], 10) + ')');
-                document.documentElement.style.setProperty('--1-color', 'rgb(' + parseInt(colors[0][0], 10) + ', ' + parseInt(colors[0][1], 10) + ', ' + parseInt(colors[0][2], 10) + ')');
-                document.documentElement.style.setProperty('--2-color', 'rgb(' + parseInt(colors[1][0], 10) + ', ' + parseInt(colors[1][1], 10) + ', ' + parseInt(colors[1][2], 10) + ')');
-                document.documentElement.style.setProperty('--3-color', 'rgb(' + parseInt(colors[2][0], 10) + ', ' + parseInt(colors[2][1], 10) + ', ' + parseInt(colors[2][2], 10) + ')');
-                document.documentElement.style.setProperty('--4-color', 'rgb(' + parseInt(colors[3][0], 10) + ', ' + parseInt(colors[3][1], 10) + ', ' + parseInt(colors[3][2], 10) + ')');
-                document.documentElement.style.setProperty('--5-color', 'rgb(' + parseInt(colors[4][0], 10) + ', ' + parseInt(colors[4][1], 10) + ', ' + parseInt(colors[4][2], 10) + ')');
-                document.documentElement.style.setProperty('--6-color', 'rgb(' + parseInt(colors[5][0], 10) + ', ' + parseInt(colors[5][1], 10) + ', ' + parseInt(colors[5][2], 10) + ')');
-                document.documentElement.style.setProperty('--7-color', 'rgb(' + parseInt(colors[6][0], 10) + ', ' + parseInt(colors[6][1], 10) + ', ' + parseInt(colors[6][2], 10) + ')');
-
-            });
+            setColorsFromFile("../js/colors-dark.json");
             break;
+
         case 'light':
             // Light
             document.documentElement.style.setProperty('--background-primary-color', 'white');
@@ -50,37 +27,51 @@ function setColorScheme(scheme) {
             document.documentElement.style.setProperty('--panel-primary-color', 'white');
             document.documentElement.style.setProperty('--background-image', 'url(../assets/img/backgroundImage-light.webp)');
             
-            function readTextFileLight(file, callback) {
-                var rawFile = new XMLHttpRequest();
-                rawFile.overrideMimeType("application/json");
-                rawFile.open("GET", file, true);
-                rawFile.onreadystatechange = function () {
-                    if (rawFile.readyState === 4 && rawFile.status == "200") {
-                        callback(rawFile.responseText);
-                    }
-                }
-                rawFile.send(null);
-            }
-            
-            readTextFileLight("../js/colors-light.json", function (text) {
-                var colors = JSON.parse(text); //parse JSON
-                document.documentElement.style.setProperty('--dark-color', 'rgb(' + parseInt(colors[7][0], 10) + ', ' + parseInt(colors[7][1], 10) + ', ' + parseInt(colors[7][2], 10) + ')');
-                document.documentElement.style.setProperty('--light-color', 'rgb(' + parseInt(colors[8][0], 10) + ', ' + parseInt(colors[8][1], 10) + ', ' + parseInt(colors[8][2], 10) + ')');
-                document.documentElement.style.setProperty('--1-color', 'rgb(' + parseInt(colors[0][0], 10) + ', ' + parseInt(colors[0][1], 10) + ', ' + parseInt(colors[0][2], 10) + ')');
-                document.documentElement.style.setProperty('--2-color', 'rgb(' + parseInt(colors[1][0], 10) + ', ' + parseInt(colors[1][1], 10) + ', ' + parseInt(colors[1][2], 10) + ')');
-                document.documentElement.style.setProperty('--3-color', 'rgb(' + parseInt(colors[2][0], 10) + ', ' + parseInt(colors[2][1], 10) + ', ' + parseInt(colors[2][2], 10) + ')');
-                document.documentElement.style.setProperty('--4-color', 'rgb(' + parseInt(colors[3][0], 10) + ', ' + parseInt(colors[3][1], 10) + ', ' + parseInt(colors[3][2], 10) + ')');
-                document.documentElement.style.setProperty('--5-color', 'rgb(' + parseInt(colors[4][0], 10) + ', ' + parseInt(colors[4][1], 10) + ', ' + parseInt(colors[4][2], 10) + ')');
-                document.documentElement.style.setProperty('--6-color', 'rgb(' + parseInt(colors[5][0], 10) + ', ' + parseInt(colors[5][1], 10) + ', ' + parseInt(colors[5][2], 10) + ')');
-                document.documentElement.style.setProperty('--7-color', 'rgb(' + parseInt(colors[6][0], 10) + ', ' + parseInt(colors[6][1], 10) + ', ' + parseInt(colors[6][2], 10) + ')');
-
-            });
+            setColorsFromFile("../js/colors-light.json");
             break;
+
         default:
             // Default
             console.log('default');
             break;
     }
+}
+
+function readTextFileDark(file, callback) {
+    var rawFile = new XMLHttpRequest();
+    rawFile.overrideMimeType("application/json");
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function () {
+        if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+        }
+    }
+    rawFile.send(null);
+}
+
+function setColorsFromFile(filePath) {
+    readTextFileDark(filePath, function (text) {
+        var colors = JSON.parse(text); // Parse JSON
+        for (let i = 0; i < colors.length; i++) {
+            let colorVariable = `--${i + 1}-color`;
+            let r = parseInt(colors[i][0], 10);
+            let g = parseInt(colors[i][1], 10);
+            let b = parseInt(colors[i][2], 10);
+
+            let colorValue = `rgb(${r}, ${g}, ${b})`;
+
+            // Calculate luminance (relative brightness)
+            let luminance = 0.2126 * (r / 255) + 0.7152 * (g / 255) + 0.0722 * (b / 255);
+
+            // Determine text color based on luminance (contrast)
+            let textColor = luminance < 0.5 ? 'white' : 'black';
+            let textColorVariable = `--${i + 1}-color-text`;
+
+            // Set the color and the text color
+            document.documentElement.style.setProperty(colorVariable, colorValue);
+            document.documentElement.style.setProperty(textColorVariable, textColor);
+        }
+    });
 }
 
 function getPreferredColorScheme() {
@@ -97,10 +88,10 @@ function getPreferredColorScheme() {
 // Listens for changes
 if (window.matchMedia) {
     var colorSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    colorSchemeQuery.addEventListener('change', setColorScheme(getPreferredColorScheme()));
+    colorSchemeQuery.addEventListener('change', setColorScheme(getPreferredColorScheme()))
 }
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     const newColorScheme = event.matches ? "dark" : "light";
-    setColorScheme(newColorScheme);
+    setColorScheme(newColorScheme)
 });
