@@ -280,6 +280,10 @@ p {
     height: 10rem;
 }
 
+.logo-color-svg {
+    width: 100%;
+}
+
 /* --- Media Queries ---- */
 
 @media (prefers-reduced-motion) {
