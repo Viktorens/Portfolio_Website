@@ -44,11 +44,11 @@
 }
 
 #design-wrapper>.shape:nth-child(3) .project-image {
-    background-image: none;
+    background-image: url(/assets/img/projects/amicus-branding/amicus_cover_manual_mockup.jpg);
 }
 
 #design-wrapper>.shape:nth-child(4) .project-image{
-    background-image: none;
+    background-image: url(/assets/img/projects/ui-speranta-cluj-napoca/ui_mockup.jpg);
 }
 
 #design-wrapper>.shape:nth-child(5) .project-image {
