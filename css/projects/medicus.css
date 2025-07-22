@@ -131,7 +131,6 @@ p {
 .description-details p,
 .logo-content p,
 .typeface-content p {
-    text-indent: 1.5rem;
     font-size: 15px;
     line-height: 26px;
     word-wrap: break-word;
@@ -140,7 +139,6 @@ p {
     -ms-hyphens: none;
     -webkit-hyphens: none;
     hyphens: none;
-    text-align: justify;
 }
 
 .description-name {
@@ -148,7 +146,6 @@ p {
     justify-content: center;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    text-align: justify;
     margin: 40px 0 20px 0;
     line-height: 40px;
     word-break: keep-all;
@@ -160,14 +157,12 @@ p {
 .description-details {
     font-size: 15px;
     line-height: 26px;
-    text-align: left;
     margin-top: 20px;
 }
 
 .description-details ul {
     list-style-type: circle;
-    padding: 0px;
-    text-align: justify;
+    text-align: left;
 }
 
 .description-list{
@@ -219,7 +214,6 @@ p {
 
 /* Color Section */
 .color-description {
-    text-align: justify;
     margin: auto;
     display: flex;
     margin-top: 30px;
@@ -311,6 +305,7 @@ p {
     
     .description-content p,
     .description-details p,
+    .description-list p,
     .logo-content p,
     .typeface-content p,
     .typeface-svg {
@@ -330,6 +325,7 @@ p {
     
     .description-content p,
     .description-details p,
+    .description-list p,
     .logo-content p,
     .typeface-content p,
     .typeface-svg {
@@ -349,6 +345,7 @@ p {
     
     .description-content p,
     .description-details p,
+    .description-list p,
     .logo-content p,
     .typeface-content p,
     .typeface-svg {

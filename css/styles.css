@@ -67,8 +67,7 @@ p {
     width: fit-content;
     margin-bottom: 0;
     letter-spacing: 3px;
-    /* text-shadow: 0px 0px 20px var(--text-primary-color); */
-    text-shadow: 0px 0px 10px #1d1d1d;
+    text-shadow: 0px 0px 20px var(--text-primary-color);
     white-space: nowrap;
 }
 
@@ -149,7 +148,6 @@ p {
 }
 
 .about p:nth-child(2) {
-    text-indent: 1.5rem;
     font-size: 15px;
     line-height: 26px;
     word-wrap: break-word;
@@ -158,7 +156,6 @@ p {
     -ms-hyphens: none;
     -webkit-hyphens: none;
     hyphens: none;
-    text-align: justify;
 }
 
 .image-about {
@@ -173,7 +170,6 @@ p {
     overflow-wrap: break-word;
     -webkit-hyphens: auto;
     hyphens: auto;
-    text-align: justify;
     margin: 40px 0 20px 0;
     line-height: 40px;
     word-break: keep-all;
