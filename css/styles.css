@@ -13,10 +13,6 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
-header {
-    padding-top: env(safe-area-inset-top);
-}
-
 .row {
     margin: 0;
 }
@@ -44,11 +40,11 @@ p {
 .img-src {
     position: fixed;
     top: 0;
-    height: 100dvh;
+    height: 100%;
     left: 0;
     right: 0;
     z-index: -1;
-    width: 100vw;
+    /* width: 100vw; */
     background-image: var(--background-image);
     background-position: center center;
     -webkit-background-size: cover;

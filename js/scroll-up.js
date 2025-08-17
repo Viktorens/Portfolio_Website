@@ -22,11 +22,3 @@ function scrollToTop() {
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
 document.addEventListener("scroll", handleScroll);
-
-function setVh() {
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-
-window.addEventListener('resize', setVh);
-window.addEventListener('load', setVh);
