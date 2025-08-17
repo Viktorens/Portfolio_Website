@@ -13,6 +13,10 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
+header {
+    padding-top: env(safe-area-inset-top);
+}
+
 .row {
     margin: 0;
 }
